@@ -31,5 +31,6 @@ group :development, :test do
   gem 'capybara'
   gem 'capybara-webkit'
   gem 'fabrication'
+  gem 'pry-byebug'
   gem 'rspec-rails'
 end
