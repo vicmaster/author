@@ -19,7 +19,7 @@ gem 'font-awesome-rails',            '~> 4.6.3.1'
 # Utils
 # gem 'activevalidators'
 # gem 'activerecord-humanized_errors'
-# gem 'awesome_print'
+gem 'awesome_print'
 gem 'ffaker'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
