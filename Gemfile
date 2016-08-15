@@ -17,7 +17,7 @@ gem 'bootstrap-sass',                '~> 3.3.5'
 gem 'font-awesome-rails',            '~> 4.6.3.1'
 
 # Utils
-gem 'activerecord-humanized_errors', '~> 2.2.0'
+gem 'activerecord-humanized_errors', '~> 2.0.1'
 gem 'awesome_print',                 '~> 1.6.1'
 gem 'ffaker',                        '~> 2.2.0'
 
