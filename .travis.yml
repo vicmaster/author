@@ -1,0 +1,10 @@
+language: ruby
+rvm:
+- 2.3.1
+bundler_args: "--without development production"
+before_script:
+- psql -c 'create database author_test;' -U postgres
+- cp config/database.yml.example config/database.yml
+- RAILS_ENV=rspec bundle exec rake db:migrate >> /dev/null 2>&1
+script:
+- RAILS_ENV=rspec bundle exec rake
