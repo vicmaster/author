@@ -30,5 +30,6 @@ end
 group :development, :test do
   gem 'capybara'
   gem 'capybara-webkit'
+  gem 'fabrication'
   gem 'rspec-rails'
 end
