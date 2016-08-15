@@ -18,7 +18,7 @@ gem 'font-awesome-rails',            '~> 4.6.3.1'
 
 # Utils
 # gem 'activevalidators'
-# gem 'activerecord-humanized_errors'
+gem 'activerecord-humanized_errors'
 gem 'awesome_print'
 gem 'ffaker'
 
