@@ -28,5 +28,7 @@ group :doc do
 end
 
 group :development, :test do
+  gem 'capybara'
+  gem 'capybara-webkit'
   gem 'rspec-rails'
 end
