@@ -11,6 +11,11 @@
 // about supported directives.
 //
 //= require jquery
+//= require bootstrap-sprockets
 //= require jquery_ujs
 //= require turbolinks
+//= require idangerous.swiper.min
+//= require isotope.pkgd.min
+//= require map
+//= require global
 //= require_tree .

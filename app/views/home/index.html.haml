@@ -1,0 +1,608 @@
+/ LOADER
+#loader-wrapper
+  #loader
+    %span.loader-inner
+  #loading-text LOADING
+/ HEADER
+%header.tt-header
+  .container
+    .top-inner.clearfix
+      .top-inner-container
+        %a.logo{:href => "index.html"}
+          %img{:alt => "", :height => "38", :src => "assets/header/logo.png", :width => "51"}/
+        %button.cmn-toggle-switch
+          %span
+    .toggle-block
+      .toggle-block-container
+        %nav.main-nav.clearfix
+          %ul
+            %li.parent.active
+              %a{:href => "index.html"}
+                Home
+                %i.menu-toggle.fa.fa-angle-down
+              %ul
+                %li
+                  %a{:href => "index.html"} Home Default
+                %li
+                  %a{:href => "index_2.html"} Home Consultant
+                %li
+                  %a{:href => "index_3.html"} Home Marketing
+                %li
+                  %a{:href => "index_4.html"} Home SEO
+            %li.parent
+              %a{:href => "cases_filter.html"}
+                Service
+                %i.menu-toggle.fa.fa-angle-down
+              %ul
+                %li
+                  %a{:href => "cases_filter.html"} Cases Filter
+                %li
+                  %a{:href => "cases_grid.html"} Cases Grid
+                %li
+                  %a{:href => "masonry.html"} Masonry
+                %li
+                  %a{:href => "masonry_sidebar.html"} Masonry Sidebar
+                %li
+                  %a{:href => "single.html"} Single Page
+                %li
+                  %a{:href => "subscriber.html"} Subscriber
+            %li.parent
+              %a{:href => "index.html#"}
+                Team
+                %i.menu-toggle.fa.fa-angle-down
+              %ul
+                %li
+                  %a{:href => "team_grid.html"} Team Grid
+                %li
+                  %a{:href => "team_list.html"} Team List
+            %li
+              %a{:href => "faq_and_footer_2.html"} FAQ
+            %li.parent
+              %a{:href => "blog_list.html"} Blog
+              %ul
+                %li
+                  %a{:href => "blog_list.html"} Blog List
+                %li
+                  %a{:href => "blog_list_sidebar.html"} Blog List Sidebar
+                %li
+                  %a{:href => "blog.html"} Blog Detail
+            %li
+              %a{:href => "contact.html"} Contact
+        .nav-more
+          %a.c-btn.type-2{:href => "index.html#"}
+            %span Get Access
+.tt-header-margin
+#content-wrapper
+  / TT-MSLIDE
+  .swiper-container{"data-add-slides" => "2", "data-autoplay" => "0", "data-center" => "0", "data-loop" => "1", "data-slides-per-view" => "1", "data-speed" => "500"}
+    .swiper-wrapper.clearfix
+      .swiper-slide.active{"data-val" => "0"}
+        .tt-mslide.background-block{:style => "background-image:url('assets/slider/bg.jpg');"}
+          .container
+            .tt-mslide-inner
+              %h1.c-h1 Digital Marketing Made Easy
+              .simple-text.size-2
+                %p Yes, we’ll help you achieve your marketing & business goals.
+              %a.c-btn.type-1{:href => "index.html#"} Get Marketly Now
+              .empty-space.marg-lg-b70.marg-md-b50
+              .empty-space.marg-lg-b200.marg-xs-b160
+              .empty-space.marg-lg-b170.marg-md-b100.marg-sm-b50.marg-xs-b0
+              .tt-mslide-img
+                %img.img-responsive{:alt => "", :height => "370", :src => "assets/slider/thumb.png", :width => "820"}/
+      .swiper-slide{"data-val" => "1"}
+        .tt-mslide.background-block{:style => "background-image:url('assets/slider/bg.jpg');"}
+          .container
+            .tt-mslide-inner
+              %h1.c-h1 Digital Marketing Made Easy
+              .simple-text.size-2
+                %p Yes, we’ll help you achieve your marketing & business goals. Yes, we’ll help you achieve your marketing & business goals.
+              %a.c-btn.type-1{:href => "index.html#"} Get Marketly Now
+              .empty-space.marg-lg-b70.marg-md-b50
+              .empty-space.marg-lg-b200.marg-xs-b160
+              .empty-space.marg-lg-b170.marg-md-b100.marg-sm-b50.marg-xs-b0
+              .tt-mslide-img
+                %img.img-responsive{:alt => "", :height => "370", :src => "assets/slider/thumb.png", :width => "820"}/
+    .pagination.type-1.pos-1.visible-xs-block
+    .swiper-arrow-left.tt-arrow-left.type-1.pos-1.hidden-xs
+      %span.lnr.lnr-chevron-left
+    .swiper-arrow-right.tt-arrow-right.type-1.pos-1.hidden-xs
+      %span.lnr.lnr-chevron-right
+  .container
+    .empty-space.marg-lg-b95.marg-sm-b50
+    .row
+      .col-sm-10.col-sm-offset-1
+        / TT-TITLE
+        .tt-title
+          .tt-title-cat seo made easy
+          %h2.c-h2
+            %small Simplify your Business
+        .empty-space.marg-lg-b40.marg-sm-b30
+        / TT-TAB-WRAPPER TYPE-1
+        .tt-tab-wrapper.type-1
+          .tt-tab-nav-wrapper
+            .tt-tab-select
+              .select-arrow
+                %i.fa.fa-angle-down
+              %select
+                %option{:selected => "selected"} Analytics
+                %option Add On
+                %option Infographics
+                %option Marketing Tools
+                %option Copywriting
+            .tt-nav-tab.mbottom50
+              .tt-nav-tab-item.active
+                %span.lnr.lnr-chart-bars
+                %span.tt-analitics-text Analytics
+              .tt-nav-tab-item
+                %span.lnr.lnr-hand
+                %span.tt-analitics-text Add On
+              .tt-nav-tab-item
+                %span.lnr.lnr-pie-chart
+                %span.tt-analitics-text Infographics
+              .tt-nav-tab-item
+                %span.lnr.lnr-laptop-phone
+                %span.tt-analitics-text Marketing Tools
+              .tt-nav-tab-item
+                %span.lnr.lnr-pencil
+                %span.tt-analitics-text Marketing Tools
+          .tt-tabs-content.clearfix.mbottom50
+            .tt-tab-info.active
+              .row
+                .col-md-5
+                  .simple-text.size-3
+                    %h3
+                      %small Inbound Marketing Formula
+                    %p Content curation market share customer engagement buzz flat design vertical-specific. Thought leadership iterative seed money lean content proprietary.
+                    %ul
+                      %li Content curation market share customer.
+                      %li Engagement buzz flat design vertical-specific.
+                      %li Platform omnichannel click bait thought.
+                      %li Disrupt taste makers council conversions.
+                      %li Insight on your business on any period of time.
+                  .empty-space.marg-sm-b30
+                .col-md-7
+                  %img.img-responsive{:alt => "", :height => "333", :src => "assets/simple-image/img_1.png", :width => "605"}/
+            .tt-tab-info
+              .row
+                .col-md-7
+                  %img.img-responsive{:alt => "", :height => "333", :src => "assets/simple-image/img_1.png", :width => "605"}/
+                  .empty-space.marg-sm-b30
+                .col-md-5
+                  .simple-text.size-3
+                    %h3
+                      %small Inbound Marketing Formula
+                    %p Content curation market share customer engagement buzz flat design vertical-specific. Thought leadership iterative seed money lean content proprietary.
+                    %ul
+                      %li Content curation market share customer.
+                      %li Engagement buzz flat design vertical-specific.
+                      %li Platform omnichannel click bait thought.
+                      %li Disrupt taste makers council conversions.
+                      %li Insight on your business on any period of time.
+            .tt-tab-info
+              .row
+                .col-md-5
+                  .simple-text.size-3
+                    %h3
+                      %small Inbound Marketing Formula
+                    %p Content curation market share customer engagement buzz flat design vertical-specific. Thought leadership iterative seed money lean content proprietary.
+                    %ul
+                      %li Content curation market share customer.
+                      %li Engagement buzz flat design vertical-specific.
+                      %li Platform omnichannel click bait thought.
+                      %li Disrupt taste makers council conversions.
+                      %li Insight on your business on any period of time.
+                  .empty-space.marg-sm-b30
+                .col-md-7
+                  %img.img-responsive{:alt => "", :height => "333", :src => "assets/simple-image/img_1.png", :width => "605"}/
+            .tt-tab-info
+              .row
+                .col-md-7
+                  %img.img-responsive{:alt => "", :height => "333", :src => "assets/simple-image/img_1.png", :width => "605"}/
+                  .empty-space.marg-sm-b30
+                .col-md-5
+                  .simple-text.size-3
+                    %h3
+                      %small Inbound Marketing Formula
+                    %p Content curation market share customer engagement buzz flat design vertical-specific. Thought leadership iterative seed money lean content proprietary.
+                    %ul
+                      %li Content curation market share customer.
+                      %li Engagement buzz flat design vertical-specific.
+                      %li Platform omnichannel click bait thought.
+                      %li Disrupt taste makers council conversions.
+                      %li Insight on your business on any period of time.
+            .tt-tab-info
+              .row
+                .col-md-5
+                  .simple-text.size-3
+                    %h3
+                      %small Inbound Marketing Formula
+                    %p Content curation market share customer engagement buzz flat design vertical-specific. Thought leadership iterative seed money lean content proprietary.
+                    %ul
+                      %li Content curation market share customer.
+                      %li Engagement buzz flat design vertical-specific.
+                      %li Platform omnichannel click bait thought.
+                      %li Disrupt taste makers council conversions.
+                      %li Insight on your business on any period of time.
+                  .empty-space.marg-sm-b30
+                .col-md-7
+                  %img.img-responsive{:alt => "", :height => "333", :src => "assets/simple-image/img_1.png", :width => "605"}/
+    .empty-space.marg-lg-b110.marg-sm-b50
+  .tt-devider
+  .container
+    .empty-space.marg-lg-b95.marg-sm-b50
+    .row
+      .col-sm-10.col-sm-offset-1
+        / TT-TITLE
+        .tt-title
+          .tt-title-cat Internet marketing
+          %h2.c-h2
+            %small Marketers Best Kept Secret
+        .empty-space.marg-lg-b35.marg-sm-b30
+        / TT-SERVICE
+        .row
+          .col-sm-6
+            .tt-service.color-2.clearfix
+              %a.tt-service-icon{:href => "index.html#"}
+                %span.lnr.lnr-rocket
+              .tt-service-info
+                %a.tt-service-title.c-h4 Skyscrapper Technique
+                .simple-text.size-3
+                  %p Content curation market share customer engagement buzz flat design vertical-specific.
+            .empty-space.marg-xs-b30
+          .col-sm-6
+            .tt-service.color-2.clearfix
+              %a.tt-service-icon{:href => "index.html#"}
+                %span.lnr.lnr-poop
+              .tt-service-info
+                %a.tt-service-title.c-h4 No Bullshit Formulas
+                .simple-text.size-3
+                  %p Platform omnichannel click bait thought leadership pivot. Disrupt council conversions.
+        .empty-space.marg-lg-b40.marg-sm-b30
+        .row
+          .col-sm-6
+            .tt-service.color-2.clearfix
+              %a.tt-service-icon{:href => "index.html#"}
+                %span.lnr.lnr-chart-bars
+              .tt-service-info
+                %a.tt-service-title.c-h4 Custom Analytics
+                .simple-text.size-3
+                  %p Thought leadership iterative seed money lean content proprietary. Snackable content period.
+            .empty-space.marg-xs-b30
+          .col-sm-6
+            .tt-service.color-2.clearfix
+              %a.tt-service-icon{:href => "index.html#"}
+                %span.lnr.lnr-envelope
+              .tt-service-info
+                %a.tt-service-title.c-h4 Email List Building
+                .simple-text.size-3
+                  %p Content curation market share customer engagement buzz flat design vertical-specific.
+        .empty-space.marg-lg-b40.marg-sm-b30
+        .row
+          .col-sm-6
+            .tt-service.color-2.clearfix
+              %a.tt-service-icon{:href => "index.html#"}
+                %span.lnr.lnr-diamond
+              .tt-service-info
+                %a.tt-service-title.c-h4 High End Product
+                .simple-text.size-3
+                  %p Platform omnichannel click bait thought leadership pivot. Disrupt taste conversions.
+            .empty-space.marg-xs-b30
+          .col-sm-6
+            .tt-service.color-2.clearfix
+              %a.tt-service-icon{:href => "index.html#"}
+                %span.lnr.lnr-thumbs-up
+              .tt-service-info
+                %a.tt-service-title.c-h4 Customer Support
+                .simple-text.size-3
+                  %p Thought leadership iterative seed money lean content proprietary. Snackable quiet period.
+  .empty-space.marg-lg-b95.marg-sm-b50.marg-xs-b30
+  .tt-devider
+  .empty-space.marg-lg-b95.marg-sm-b50.marg-xs-b30
+  .container
+    / TT-TITLE
+    .tt-title
+      .tt-title-cat Market your mind
+      %h2.c-h2
+        %small Case Studies
+    .empty-space.marg-lg-b35.marg-sm-b30
+    / TT-CASE
+    .tt-swiper-margin
+      .swiper-container{"data-add-slides" => "3", "data-autoplay" => "5000", "data-center" => "0", "data-lg-slides" => "3", "data-loop" => "0", "data-md-slides" => "3", "data-slides-per-view" => "responsive", "data-sm-slides" => "2", "data-speed" => "500", "data-xs-slides" => "1"}
+        .swiper-wrapper.clearfix
+          .swiper-slide.active{"data-val" => "0"}
+            .tt-case
+              %a.tt-case-img.custom-hover{:href => "index.html#"}
+                %img.img-responsive{:alt => "", :height => "230", :src => "assets/case/case_1.jpg", :width => "392"}/
+              .tt-case-info
+                %a.tt-case-title.c-h5{:href => "index.html#"} Growth Hack for Dropout
+                .simple-text.size-3
+                  %p Platform omnichannel click bait thought leadership pivot. Disrupt taste makers council conversions emerging.
+          .swiper-slide{"data-val" => "1"}
+            .tt-case
+              %a.tt-case-img.custom-hover{:href => "index.html#"}
+                %img.img-responsive{:alt => "", :height => "230", :src => "assets/case/case_2.jpg", :width => "392"}/
+              .tt-case-info
+                %a.tt-case-title.c-h5{:href => "index.html#"} Adios Digital Marketing
+                .simple-text.size-3
+                  %p Platform omnichannel click bait thought leadership pivot. Disrupt taste makers council conversions emerging.
+          .swiper-slide{"data-val" => "2"}
+            .tt-case
+              %a.tt-case-img.custom-hover{:href => "index.html#"}
+                %img.img-responsive{:alt => "", :height => "230", :src => "assets/case/case_3.jpg", :width => "392"}/
+              .tt-case-info
+                %a.tt-case-title.c-h5{:href => "index.html#"} Content Management for Animo
+                .simple-text.size-3
+                  %p Platform omnichannel click bait thought leadership pivot. Disrupt taste makers council conversions emerging.
+          .swiper-slide{"data-val" => "3"}
+            .tt-case
+              %a.tt-case-img.custom-hover{:href => "index.html#"}
+                %img.img-responsive{:alt => "", :height => "230", :src => "assets/case/case_1.jpg", :width => "392"}/
+              .tt-case-info
+                %a.tt-case-title.c-h5{:href => "index.html#"} Growth Hack for Dropout
+                .simple-text.size-3
+                  %p Platform omnichannel click bait thought leadership pivot. Disrupt taste makers council conversions emerging.
+          .swiper-slide{"data-val" => "4"}
+            .tt-case
+              %a.tt-case-img.custom-hover{:href => "index.html#"}
+                %img.img-responsive{:alt => "", :height => "230", :src => "assets/case/case_2.jpg", :width => "392"}/
+              .tt-case-info
+                %a.tt-case-title.c-h5{:href => "index.html#"} Adios Digital Marketing
+                .simple-text.size-3
+                  %p Platform omnichannel click bait thought leadership pivot. Disrupt taste makers council conversions emerging.
+          .swiper-slide{"data-val" => "5"}
+            .tt-case
+              %a.tt-case-img.custom-hover{:href => "index.html#"}
+                %img.img-responsive{:alt => "", :height => "230", :src => "assets/case/case_3.jpg", :width => "392"}/
+              .tt-case-info
+                %a.tt-case-title.c-h5{:href => "index.html#"} Content Management for Animo
+                .simple-text.size-3
+                  %p Platform omnichannel click bait thought leadership pivot. Disrupt taste makers council conversions emerging.
+        .pagination.type-1.visible-xs-block
+        .tt-swiper-arrow-center
+          .swiper-arrow-left.tt-arrow-left.type-2.pos-2.hidden-xs
+            %span.lnr.lnr-chevron-left
+          .swiper-arrow-right.tt-arrow-right.type-2.pos-2.hidden-xs
+            %span.lnr.lnr-chevron-right
+  .empty-space.marg-lg-b100.marg-sm-b50.marg-xs-b30
+  .tt-devider
+  .empty-space.marg-lg-b95.marg-sm-b50.marg-xs-b30
+  .container
+    / TT-TITLE
+    .tt-title
+      .tt-title-cat lovely customers
+      %h2.c-h2
+        %small Simple Pricing for All
+    .empty-space.marg-lg-b40.marg-sm-b30
+    / TT-PRICING
+    .row
+      .col-sm-4
+        .tt-pricing
+          %h4.tt-pricing-title Business Plan
+          .tt-pricing-count
+            %span.tt-pricing-top> $
+            10
+            %span mo
+          %ul.tt-pricing-list
+            %li.active Unlimited marketing & growth hacks
+            %li Advanced Email list building techniques
+            %li Invitation to Secret group
+        .empty-space.marg-xs-b30
+      .col-sm-4
+        .tt-pricing
+          %h4.tt-pricing-title Business Plan
+          .tt-pricing-count
+            %span.tt-pricing-top> $
+            29
+            %span mo
+          %ul.tt-pricing-list
+            %li.active Unlimited marketing & growth hacks
+            %li.active Advanced Email list building techniques
+            %li Invitation to Secret group
+        .empty-space.marg-xs-b30
+      .col-sm-4
+        .tt-pricing
+          %h4.tt-pricing-title Business Plan
+          .tt-pricing-count
+            %span.tt-pricing-top> $
+            79
+            %span mo
+          %ul.tt-pricing-list
+            %li.active Unlimited marketing & growth hacks
+            %li.active Advanced Email list building techniques
+            %li.active Invitation to Secret group
+    .empty-space.marg-lg-b40.marg-sm-b30
+    .text-center
+      %a.c-btn.type-1.size-2{:href => "index.html#"} Start Free Trial
+  .empty-space.marg-lg-b95.marg-sm-b50.marg-xs-b30
+  .tt-devider
+  .empty-space.marg-lg-b95.marg-sm-b50.marg-xs-b30
+  .container
+    / TT-TITLE
+    .tt-title
+      .tt-title-cat lovely customers
+      %h2.c-h2
+        %small Don’t Take Our Word for It
+    .empty-space.marg-lg-b35.marg-sm-b30
+    / TT-TESTIMONIAL
+    .row
+      .col-md-10.col-md-offset-1
+        .swiper-container{"data-add-slides" => "2", "data-autoplay" => "0", "data-center" => "0", "data-loop" => "1", "data-slides-per-view" => "1", "data-speed" => "500"}
+          .swiper-wrapper.clearfix
+            .swiper-slide.active{"data-val" => "0"}
+              .tt-testimonial.clearfix
+                .tt-testimonial-icon
+                  %img{:alt => "", :height => "100", :src => "assets/testimonial/user.png", :width => "100"}/
+                .tt-testimonial-info
+                  .simple-text
+                    %p Marketly is made with care for every pixels. We have provided all the different layouts and made it completely goal driven. Portfolio, business, app, ecommerce demos for all the niches are created with the help of industry specialists. Simply put - Marketly is best theme out there.
+                  .tt-testimonial-label
+                    \-
+                    = succeed "," do
+                      %a.tt-testimonial-name{:href => "index.html#"} Joe Martin
+                    %a{:href => "index.html#"} Optinmizely.com
+            .swiper-slide{"data-val" => "1"}
+              .tt-testimonial.clearfix
+                .tt-testimonial-icon
+                  %img{:alt => "", :height => "100", :src => "assets/testimonial/user.png", :width => "100"}/
+                .tt-testimonial-info
+                  .simple-text
+                    %p Marketly is made with care for every pixels. We have provided all the different layouts and made it completely goal driven. Portfolio, business, app, ecommerce demos for all the niches are created with the help of industry specialists. Simply put - Marketly is best theme out there.
+                  .tt-testimonial-label
+                    \-
+                    = succeed "," do
+                      %a.tt-testimonial-name{:href => "index.html#"} Joe Martin
+                    %a{:href => "index.html#"} Optinmizely.com
+          .pagination.type-1.visible-xs-block
+          .tt-swiper-arrow-center
+            .swiper-arrow-left.tt-arrow-left.type-2.pos-2.hidden-xs
+              %span.lnr.lnr-chevron-left
+            .swiper-arrow-right.tt-arrow-right.type-2.pos-2.hidden-xs
+              %span.lnr.lnr-chevron-right
+  .empty-space.marg-lg-b100.marg-sm-b50.marg-xs-b30
+  .tt-devider
+  .empty-space.marg-lg-b100.marg-sm-b50.marg-xs-b30
+  .container
+    / TT-TITLE
+    .tt-title
+      .tt-title-cat Storytelling
+      %h2.c-h2
+        %small Latest Blog Posts
+    .empty-space.marg-lg-b35.marg-sm-b30
+    / tt-post
+    .row
+      .col-sm-4
+        .tt-post
+          %a.tt-post-img.custom-hover
+            %img.img-responsive{:alt => "", :height => "230", :src => "assets/post/post_1.jpg", :width => "392"}/
+          .tt-post-info
+            %a.tt-post-title.c-h5{:href => "index.html#"} Top 10 SEO Blogs in 2015
+            .tt-post-cat by John Dean
+            .simple-text.size-3
+              %p Thought leadership iterative seed money lean content proprietary. Snackable content quiet period.
+            %a.c-btn.type-4{:href => "index.html#"} Read More
+        .empty-space.marg-xs-b30
+      .col-sm-4
+        .tt-post
+          %a.tt-post-img.custom-hover
+            %img.img-responsive{:alt => "", :height => "230", :src => "assets/post/post_2.jpg", :width => "392"}/
+          .tt-post-info
+            %a.tt-post-title.c-h5{:href => "index.html#"} Here’s What We Learned About SEO
+            .tt-post-cat by John Dean
+            .simple-text.size-3
+              %p Platform omnichannel click bait thought leadership pivot. Disrupt taste makers council conversions emerging.
+            %a.c-btn.type-4{:href => "index.html#"} Read More
+        .empty-space.marg-xs-b30
+      .col-sm-4
+        .tt-post
+          %a.tt-post-img.custom-hover
+            %img.img-responsive{:alt => "", :height => "230", :src => "assets/post/post_3.jpg", :width => "392"}/
+          .tt-post-info
+            %a.tt-post-title.c-h5{:href => "index.html#"} Content Marketing Made Easy
+            .tt-post-cat by John Dean
+            .simple-text.size-3
+              %p Virality The Cloud content marketing thought leadership. Alignment platform phablet. CRM scalability mobile ready.
+            %a.c-btn.type-4{:href => "index.html#"} Read More
+    .empty-space.marg-lg-b100.marg-sm-b50.marg-xs-b30
+    / TT-PARTNER
+    .swiper-container{"data-add-slides" => "5", "data-autoplay" => "5000", "data-center" => "0", "data-lg-slides" => "4", "data-loop" => "0", "data-md-slides" => "3", "data-slides-per-view" => "responsive", "data-sm-slides" => "3", "data-speed" => "500", "data-xs-slides" => "2"}
+      .swiper-wrapper.clearfix
+        .swiper-slide.active{"data-val" => "0"}
+          %a.tt-partner{:href => "index.html#"}
+            %img.img-responsive{:alt => "", :src => "assets/partners/partner_1.png"}/
+        .swiper-slide{"data-val" => "1"}
+          %a.tt-partner{:href => "index.html#"}
+            %img.img-responsive{:alt => "", :src => "assets/partners/partner_2.png"}/
+        .swiper-slide{"data-val" => "2"}
+          %a.tt-partner{:href => "index.html#"}
+            %img.img-responsive{:alt => "", :src => "assets/partners/partner_3.png"}/
+        .swiper-slide{"data-val" => "3"}
+          %a.tt-partner{:href => "index.html#"}
+            %img.img-responsive{:alt => "", :src => "assets/partners/partner_4.png"}/
+        .swiper-slide{"data-val" => "4"}
+          %a.tt-partner{:href => "index.html#"}
+            %img.img-responsive{:alt => "", :src => "assets/partners/partner_5.png"}/
+        .swiper-slide{"data-val" => "5"}
+          %a.tt-partner{:href => "index.html#"}
+            %img.img-responsive{:alt => "", :src => "assets/partners/partner_1.png"}/
+      .pagination.type-1.visible-xs-block
+    .empty-space.marg-lg-b100.marg-sm-b50.marg-xs-b30
+  / TT-BANNER
+  .tt-banner.background-block{:style => "background-image:url('assets/tt-banner/bg.jpg');"}
+    .container
+      .empty-space.marg-lg-b120.marg-sm-b50.marg-xs-b30
+      .tt-banner-img
+        %img.img-responsive{:alt => "", :src => "assets/tt-banner/tt-banner.png"}/
+      .row
+        .col-sm-7.col-sm-offset-5
+          %h4.tt-banner-title.c-h2
+            %small Exclusive SEO Backlinking Formula Marketing Giveaway (Worth $99)
+          %a.c-btn.type-1.size-3{:href => "index.html#"} Purchase Now
+      .empty-space.marg-lg-b120.marg-sm-b50.marg-xs-b30
+/ FOOTER
+%footer.tt-footer
+  .container
+    .row
+      .col-sm-6.col-md-3
+        %img{:alt => "", :src => "assets/footer/logo.png"}/
+        .empty-space.marg-lg-b25
+        .simple-text.size-3.color-4
+          %p Curated lean content native content snackable content millennials seamless CRM. Seamless intuitive proprietary. Drone trending The Cloud. Scalability B2C social buttons. Synergies hashtag brand voice crowdsource long-tail virality. Curated lean content native content snackable content.
+        .empty-space.marg-xs-b30
+      .col-sm-6.col-md-3
+        %h5.c-h5.color-3 My Office
+        .empty-space.marg-lg-b10
+        .tt-address.clearfix
+          .tt-address-icon
+            %i.fa.fa-map-marker{"aria-hidden" => "true"}
+          .tt-address-info
+            2352 Lake Avenue
+            %br/
+            Georgetown, SC 29440
+        .empty-space.marg-lg-b25
+        .tt-address.clearfix
+          .tt-address-icon
+            %i.fa.fa-envelope-o{"aria-hidden" => "true"}
+          .tt-address-info
+            %a{:href => "mailto:hello@marketly.com"} hello@marketly.com
+        .empty-space.marg-lg-b25
+        .tt-address.clearfix
+          .tt-address-icon
+            %i.fa.fa-phone{"aria-hidden" => "true"}
+          .tt-address-info
+            %a{:href => "tel:123456789"} 1-234-567-89
+        .empty-space.marg-lg-b40.marg-xs-b30
+        %h5.c-h5.color-3 Get Social
+        .empty-space.marg-lg-b10
+        %ul.tt-social.clearfix
+          %li
+            %a{:href => "index.html#"}
+              %i.fa.fa-facebook{"aria-hidden" => "true"}
+          %li
+            %a{:href => "index.html#"}
+              %i.fa.fa-twitter{"aria-hidden" => "true"}
+          %li
+            %a{:href => "index.html#"}
+              %i.fa.fa-instagram{"aria-hidden" => "true"}
+          %li
+            %a{:href => "index.html#"}
+              %i.fa.fa-linkedin{"aria-hidden" => "true"}
+        .empty-space.marg-sm-b30
+      .col-xs-12.col-md-6
+        %h5.c-h5.color-3 Drop me a line
+        .empty-space.marg-lg-b10
+        .simple-text.size-3.color-4
+          %p I always love to hear from you. I love giving SEO tips & consult with anyone who wants to make it big, really!
+        .empty-space.marg-lg-b10
+        .tt-footer-form
+          %form
+            .row
+              .col-sm-6
+                %input.c-input.type-1{:placeholder => "Your Name", :type => "text"}/
+              .col-sm-6
+                %input.c-input.type-1{:placeholder => "Your Email", :type => "text"}/
+            %textarea.c-area.type-1{:placeholder => "Your Message"}
+    .empty-space.marg-lg-b80.marg-sm-b50.marg-xs-b30
+  .tt-footer-copy
+    .container
+      .simple-text.size-5.color-4
+        %p © Built with pride and caffeine. All rights reserved. Gfxbucket™
