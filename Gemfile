@@ -16,14 +16,13 @@ gem 'jquery-rails'
 gem 'haml-rails'
 gem 'bootstrap-sass',                '~> 3.3.5'
 gem 'font-awesome-rails',            '~> 4.6.3.1'
+gem 'swiper-rails'
+gem 'masonry-rails'
 
 # Utils
 gem 'activerecord-humanized_errors'
 gem 'awesome_print'
 gem 'ffaker'
-
-# Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
 
 group :development, :test do
   gem 'capybara'

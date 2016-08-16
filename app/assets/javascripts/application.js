@@ -11,11 +11,9 @@
 // about supported directives.
 //
 //= require jquery
-//= require bootstrap-sprockets
 //= require jquery_ujs
-//= require turbolinks
-//= require idangerous.swiper.min
-//= require isotope.pkgd.min
-//= require map
+//= require bootstrap-sprockets
+//= require swiper
+//= require masonry/jquery.masonry
 //= require global
 //= require_tree .
