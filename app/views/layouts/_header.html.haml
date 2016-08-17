@@ -1,0 +1,57 @@
+%header.tt-header
+  .container
+    .top-inner.clearfix
+      .top-inner-container
+        %a.logo{ :href => "index.html" }
+          %img{ :alt => "", :height => "38", :src => "assets/header/logo.png", :width => "51" }/
+        %button.cmn-toggle-switch
+          %span
+    .toggle-block
+      .toggle-block-container
+        %nav.main-nav.clearfix
+          %ul
+            %li.parent.active
+              %a{ :href => "index.html" }
+                Home
+            %li.parent
+              %a{ :href => "cases_filter.html" }
+                Service
+                %i.menu-toggle.fa.fa-angle-down
+              %ul
+                %li
+                  %a{ :href => "cases_filter.html" } Cases Filter
+                %li
+                  %a{ :href => "cases_grid.html" } Cases Grid
+                %li
+                  %a{ :href => "masonry.html" } Masonry
+                %li
+                  %a{ :href => "masonry_sidebar.html" } Masonry Sidebar
+                %li
+                  %a{ :href => "single.html" } Single Page
+                %li
+                  %a{ :href => "subscriber.html" } Subscriber
+            -# %li.parent
+            -#   %a{ :href => "index.html#" }
+            -#     Team
+            -#     %i.menu-toggle.fa.fa-angle-down
+            -#   %ul
+            -#     %li
+            -#       %a{ :href => "team_grid.html" } Team Grid
+            -#     %li
+            -#       %a{ :href => "team_list.html" } Team List
+            %li
+              %a{ :href => "faq_and_footer_2.html" } FAQ
+            -# %li.parent
+            -#   %a{ :href => "blog_list.html" } Blog
+            -#   %ul
+            -#     %li
+            -#       %a{ :href => "blog_list.html" } Blog List
+            -#     %li
+            -#       %a{ :href => "blog_list_sidebar.html" } Blog List Sidebar
+            -#     %li
+            -#       %a{ :href => "blog.html" } Blog Detail
+            %li
+              %a{ :href => "contact.html" } Contact
+        .nav-more
+          %a.c-btn.type-2{ :href => "index.html#" }
+            %span Get Access
