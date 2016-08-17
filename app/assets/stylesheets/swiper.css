@@ -545,3 +545,12 @@ button.swiper-pagination-bullet {
     transform: rotate(360deg);
   }
 }
+
+.swiper-arrow-left.type-1, .swiper-arrow-right.type-1{
+  bottom: 400px;
+  position: relative;
+  z-index: 1;
+}
+
+.swiper-arrow-left.type-1{ float: left; }
+.swiper-arrow-right.type-1{ float: right; }

@@ -16,4 +16,3 @@
 //= require swiper
 //= require masonry/jquery.masonry
 //= require global
-//= require_tree .

@@ -75,7 +75,7 @@ jQuery(function($) {
 		$('.swiper-container.initialized[data-slides-per-view="responsive"]').each(function(){
 			var thisSwiper = swipers['swiper-'+$(this).attr('id')], $t = $(this), slidesPerViewVar = updateSlidesPerView($t);
 			thisSwiper.params.slidesPerView = slidesPerViewVar;
-			thisSwiper.reInit();
+			thisSwiper.update();
 			var paginationSpan = $t.find('.pagination span');
 			var paginationSlice = paginationSpan.hide().slice(0,(paginationSpan.length+1-slidesPerViewVar));
 			if(paginationSlice.length<=1 || slidesPerViewVar>=$t.find('.swiper-slide').length) $t.addClass('pagination-hidden');
@@ -143,7 +143,7 @@ jQuery(function($) {
 
 				}
 			});
-			swipers['swiper-'+index].reInit();
+			swipers['swiper-'+index].update();
 			if($t.attr('data-slides-per-view')=='responsive'){
 				var paginationSpan = $t.find('.pagination span');
 				var paginationSlice = paginationSpan.hide().slice(0,(paginationSpan.length+1-slidesPerViewVar));
@@ -166,11 +166,11 @@ jQuery(function($) {
 
 	//swiper arrows
 	$('.swiper-arrow-left').on('click', function(){
-		swipers['swiper-'+$(this).parents('.swiper-container').attr('id')].swipePrev();
+		swipers['swiper-'+$(this).parents('.swiper-container').attr('id')].slidePrev();
 	});
 
 	$('.swiper-arrow-right').on('click', function(){
-		swipers['swiper-'+$(this).parents('.swiper-container').attr('id')].swipeNext();
+		swipers['swiper-'+$(this).parents('.swiper-container').attr('id')].slideNext();
 	});
 
 	/*==============================*/
@@ -248,7 +248,7 @@ jQuery(function($) {
 	function tabReinit($tab){
 		$tab.find('.swiper-container').each(function(){
 			var thisSwiper = swipers['swiper-'+$(this).attr('id')], $t = $(this);
-			thisSwiper.reInit();	
+			thisSwiper.update();	
 		});			
 	}
 
