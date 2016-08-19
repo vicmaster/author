@@ -3,7 +3,8 @@
     .top-inner.clearfix
       .top-inner-container
         %a.logo{ :href => "index.html" }
-          %img{ :alt => "", :height => "38", :src => "assets/header/logo2.png", :width => "51" }/
+          -# %img{ :alt => "", :height => "38", :src => "assets/header/logo2.png", :width => "51" }/
+          = image_tag 'header/logo2.png', width: "51", height: "38"
         %button.cmn-toggle-switch
           %span
     .toggle-block
