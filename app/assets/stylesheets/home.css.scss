@@ -1221,7 +1221,7 @@ a {
     height: 29px;
     margin-top: -14.5px;
     margin-left: -14.5px;
-    background: url('hover_icon.png') no-repeat center center;
+    background: image-url('hover_icon.png') no-repeat center center;
     opacity: 0;
     -webkit-transform: scale(0);
     -moz-transform: scale(0);
@@ -2274,7 +2274,7 @@ a {
         left: 100%;
         bottom: 0;
         width: 39px;
-        background: url("analitics/arrow.png");
+        background: image-url("analitics/arrow.png");
         z-index: 2;
       }
       &:after {
