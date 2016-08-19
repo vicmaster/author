@@ -2,7 +2,7 @@
 .swiper-container{ "data-add-slides" => "2", "data-autoplay" => "0", "data-center" => "0", "data-loop" => "1", "data-slides-per-view" => "1", "data-speed" => "500" }
   .swiper-wrapper.clearfix
     .swiper-slide.active{ "data-val" => "0" }
-      .tt-mslide.background-block{ :style => "background-image:url('assets/slider/bg_5.jpg');" }
+      .tt-mslide.background-block.slide1{ style: "background-image: image-url('assets/slider/bg_5.jpg');" }
         .container
           .tt-mslide-inner
             %h1.c-h1 Contenido Profesional y exclusivo
@@ -13,9 +13,9 @@
             .empty-space.marg-lg-b200.marg-xs-b160
             .empty-space.marg-lg-b170.marg-md-b100.marg-sm-b50.marg-xs-b0
             .tt-mslide-img
-              %img.img-responsive{ :alt => "", :height => "370", :src => "assets/slider/thumb.png", :width => "820" }/
+              = image_tag "slider/thumb.png", height: "370", width: "820", class: "img-responsive"
     .swiper-slide{ "data-val" => "1" }
-      .tt-mslide.background-block{ :style => "background-image:url('assets/slider/bg_7.jpg');" }
+      .tt-mslide.background-block.slide2
         .container
           .tt-mslide-inner
             %h1.c-h1 Contenido Profesional y exclusivo
@@ -26,7 +26,7 @@
             .empty-space.marg-lg-b200.marg-xs-b160
             .empty-space.marg-lg-b170.marg-md-b100.marg-sm-b50.marg-xs-b0
             .tt-mslide-img
-              %img.img-responsive{ :alt => "", :height => "370", :src => "assets/slider/thumb.png", :width => "820" }/
+              = image_tag "slider/thumb.png", height: "370", width: "820", class: "img-responsive"
   .pagination.type-1.pos-1.visible-xs-block
   .swiper-arrow-left.tt-arrow-left.type-1.pos-1.hidden-xs
     %span.lnr.lnr-chevron-left
