@@ -16,8 +16,8 @@ gem 'jquery-rails'
 gem 'haml-rails'
 gem 'bootstrap-sass',                '~> 3.3.5'
 gem 'font-awesome-rails',            '~> 4.6.3.1'
-gem 'swiper-rails'
-gem 'masonry-rails'
+gem 'swiper-rails',                  '~> 1.0.4'
+gem 'masonry-rails',                 '~> 0.2.4'
 
 # Utils
 gem 'activerecord-humanized_errors', '~> 2.0.1'
@@ -30,4 +30,8 @@ group :development, :test do
   gem 'fabrication',      '~> 2.12.2'
   gem 'pry-byebug',       '~> 3.3.0'
   gem 'rspec-rails',      '~> 3.2.1'
+end
+
+group :production do
+  gem 'rails_12factor',   '~> 0.0.3'
 end
