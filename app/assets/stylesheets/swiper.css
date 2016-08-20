@@ -47,7 +47,6 @@
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
-  cursor: image-url("drag.png") 16 9, ew-resize!important;
 }
 .swiper-container-android .swiper-slide,
 .swiper-wrapper {
