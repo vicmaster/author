@@ -2823,6 +2823,9 @@ a {
   background: #edede5;
   -moz-border-radius: 50%;
   border-radius: 50%;
+  img {
+    border-radius: 50%;
+  }
 }
 
 .tt-testimonial-info {
