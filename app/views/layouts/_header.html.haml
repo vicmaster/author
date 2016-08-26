@@ -12,24 +12,24 @@
             %li.parent.active
               = link_to "Inicio", root_url
             %li.parent
-              %a{ :href => "cases_filter.html" }
+              %a{ :href => "#voltaire-products" }
                 Productos
-                %i.menu-toggle.fa.fa-angle-down
-              %ul
-                %li
-                  %a{ :href => "cases_filter.html" } Cases Filter
-                %li
-                  %a{ :href => "cases_grid.html" } Cases Grid
-                %li
-                  %a{ :href => "masonry.html" } Masonry
-                %li
-                  %a{ :href => "masonry_sidebar.html" } Masonry Sidebar
-                %li
-                  %a{ :href => "single.html" } Single Page
-                %li
-                  %a{ :href => "subscriber.html" } Subscriber
+                -# %i.menu-toggle.fa.fa-angle-down
+              -# %ul
+              -#   %li
+              -#     %a{ :href => "cases_filter.html" } Cases Filter
+              -#   %li
+              -#     %a{ :href => "cases_grid.html" } Cases Grid
+              -#   %li
+              -#     %a{ :href => "masonry.html" } Masonry
+              -#   %li
+              -#     %a{ :href => "masonry_sidebar.html" } Masonry Sidebar
+              -#   %li
+              -#     %a{ :href => "single.html" } Single Page
+              -#   %li
+              -#     %a{ :href => "subscriber.html" } Subscriber
             %li.parent
-              %a{ :href => "index.html#" }
+              %a{ :href => "#voltaire-pricing" }
                 Precios
             %li
               = link_to 'FAQ', faqs_path
@@ -45,7 +45,7 @@
             %li
               = link_to 'Garantia', guarantee_index_url
             %li
-              %a{ :href => "contact.html" } Mi cuenta
+              %a{ :href => "#" } Mi cuenta
         .nav-more
-          %a.c-btn.type-2{ :href => "index.html#" }
-            %span Crea una cuenta.
+          %a.c-btn.type-2{ :href => "#" }
+            %span Crea una cuenta
