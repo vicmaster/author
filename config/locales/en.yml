@@ -21,3 +21,12 @@
 
 en:
   hello: "Hello world"
+  header:
+    nav:
+      home: "Inicio"
+      products: "Productos"
+      pricing: "Precios"
+      faq: "FAQ"
+      guarantee: "Garantia"
+      my_account: "Mi cuenta"
+      create_account: "Crear una cuenta"
