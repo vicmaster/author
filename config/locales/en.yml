@@ -47,3 +47,26 @@ en:
       cta: "Prueba Voltaire haciendo tu primera orden ¡Gratis!"
       disclaimer: "Hasta 150 palabras"
       note: "No somos un servicio de freelancers, Voltaire es 100% responsable del servicio que se ofrece." 
+    product_section:
+      title: "Productos"
+      products:
+        prod1:
+          title: "Social media"
+          description: "Genera branding, comunicación directa, nuevos lanzamientos y engagement para tu audiencia clave."
+        prod2:
+          title: "Contenido para sitio web"
+          description: "Entregamos contenido relevante basado en análisis. Siempre basándonos en mejores prácticas de SEO"
+        prod3:
+          title: "AdWords Google"
+          description: "Creamos texto con la longitud perfecta, palabras clave de Google AdWords y “call to action” de acuerdo a tendencias y objetivos."
+        prod4:
+          title: "Ecommerce"
+          description: "Descripciones de productos, páginas de categorías completas y onboardings para nuevos clientes."
+        prod5:
+          title: "Email"
+          description: "Para campañas de marketing, newsletters, combinación de correspondencia o comunicación diversa."
+        prod6:
+          title: "Blog"
+          description: "Artículos completos para mantener actualizado el blog de tu marca, optimizados para motores populares."
+      cta: "Prueba Voltaire de forma gratuita"
+      disclaimer: "Hasta 150 palabras"

@@ -7,7 +7,7 @@
       .tt-title
         -# .tt-title-cat Productos
         %h2.c-h2
-          %small Productos
+          %small= t("home.product_section.title")
       .empty-space.marg-lg-b35.marg-sm-b30
       / TT-SERVICE
       .row
@@ -16,18 +16,20 @@
             %a.tt-service-icon{ :href => "index.html#" }
               %span.lnr.lnr-users
             .tt-service-info
-              %a.tt-service-title.c-h4 Social media
+              %a.tt-service-title.c-h4
+                = t("home.product_section.products.prod1.title")
               .simple-text.size-3
-                %p Genera branding, comunicación directa, nuevos lanzamientos y engagement para tu audiencia clave.
+                %p= t("home.product_section.products.prod1.description")
           .empty-space.marg-xs-b30
         .col-sm-6
           .tt-service.color-2.clearfix
             %a.tt-service-icon{ :href => "index.html#" }
               %span.lnr.lnr-code
             .tt-service-info
-              %a.tt-service-title.c-h4 Contenido para sitio web
+              %a.tt-service-title.c-h4
+                = t("home.product_section.products.prod2.title")
               .simple-text.size-3
-                %p Entregamos contenido relevante basado en análisis. Siempre basándonos en mejores prácticas de SEO
+                %p= t("home.product_section.products.prod2.description")
       .empty-space.marg-lg-b40.marg-sm-b30
       .row
         .col-sm-6
@@ -35,18 +37,20 @@
             %a.tt-service-icon{ :href => "index.html#" }
               %span.lnr.lnr-spell-check
             .tt-service-info
-              %a.tt-service-title.c-h4 AdWords Google
+              %a.tt-service-title.c-h4
+                = t("home.product_section.products.prod3.title")
               .simple-text.size-3
-                %p Creamos texto con la longitud perfecta, palabras clave de Google AdWords y “call to action” de acuerdo a tendencias y objetivos.
+                %p= t("home.product_section.products.prod3.description")
           .empty-space.marg-xs-b30
         .col-sm-6
           .tt-service.color-2.clearfix
             %a.tt-service-icon{ :href => "index.html#" }
               %span.lnr.lnr-cart
             .tt-service-info
-              %a.tt-service-title.c-h4 Ecommerce
+              %a.tt-service-title.c-h4
+                = t("home.product_section.products.prod4.title")
               .simple-text.size-3
-                %p Descripciones de productos, páginas de categorías completas y onboardings para nuevos clientes.
+                %p= t("home.product_section.products.prod4.description")
       .empty-space.marg-lg-b40.marg-sm-b30
       .row
         .col-sm-6
@@ -54,23 +58,25 @@
             %a.tt-service-icon{ :href => "index.html#" }
               %span.lnr.lnr-envelope
             .tt-service-info
-              %a.tt-service-title.c-h4 Email
+              %a.tt-service-title.c-h4
+                = t("home.product_section.products.prod5.title")
               .simple-text.size-3
-                %p Para campañas de marketing, newsletters, combinación de correspondencia o comunicación diversa.
+                %p= t("home.product_section.products.prod5.description")
           .empty-space.marg-xs-b30
         .col-sm-6
           .tt-service.color-2.clearfix
             %a.tt-service-icon{ :href => "index.html#" }
               %span.lnr.lnr-license
             .tt-service-info
-              %a.tt-service-title.c-h4 Blog
+              %a.tt-service-title.c-h4
+                = t("home.product_section.products.prod6.title")
               .simple-text.size-3
-                %p Artículos completos para mantener actualizado el blog de tu marca, optimizados para motores populares.
+                %p= t("home.product_section.products.prod6.description")
   .empty-space.marg-lg-b40.marg-sm-b30
   .text-center
-    %a.c-btn.type-1.size-2{ :href => "index.html#" } Prueba Voltaire de forma gratuita
+    = link_to t("home.product_section.cta"), "#", class: "c-btn type-1 size-2"
     %br
     %br
     %span
-      %small Hasta 150 palabras
+      %small= t("home.product_section.disclaimer")
 .empty-space.marg-lg-b95.marg-sm-b50.marg-xs-b30
