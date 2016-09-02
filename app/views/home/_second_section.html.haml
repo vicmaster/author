@@ -17,9 +17,9 @@
               .col-md-5
                 .simple-text.size-3
                   %h3
-                    %small ¿Que es Voltaire?
-                  %p Voltaire te ayuda creando tu contenido profesional, conectamos tu propuesta con nuestros copywriters aprobados y recomendados por nuestros clientes.
-                  %p No estás contratando un copywriter o analista creativo de tiempo completo,  estás contratando un servicio profesional de generación de contenido on-demand ¡sólo pagas por lo que usas cuando lo quieres!
+                    %small= t("home.second_section.title")
+                  %p= t("home.second_section.description.sentence1")
+                  %p= t("home.second_section.description.sentence2")
                 .empty-space.marg-sm-b30
               .col-md-7
                 = image_tag "simple-image/img_1.png", height: "333", width: "605", class: "img-responsive"
@@ -28,14 +28,13 @@
   .text-center
     .simple-text.size-3
       %h3
-        %small ¿Necesitas generar contenido profesional para tu web, social media, SEO o SEM?
+        %small= t("home.second_section.pre")
     %br
-    %a.c-btn.type-1.size-2{ :href => "index.html#" } Prueba Voltaire haciendo tu primera orden ¡Gratis!
+    = link_to t("home.second_section.cta"), "#", class: "c-btn type-1 size2"
     %br
     %br
     %span
-      %small Hasta 150 palabras
+      %small= t("home.second_section.disclaimer")
     .empty-space.marg-lg-b40.marg-sm-b30
-    %span
-      No somos un servicio de freelancers, Voltaire es 100% responsable del servicio que se ofrece.
+    %span= t("home.second_section.note")
   .empty-space.marg-lg-b110.marg-sm-b50

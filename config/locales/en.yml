@@ -38,3 +38,12 @@ en:
         disclaimer: "Hasta 150 palabras"
       config:
         btn_scroll: "Conoce más"
+    second_section:
+      title: "¿Que es Voltaire?"
+      description:
+        sentence1: "Voltaire te ayuda creando tu contenido profesional, conectamos tu propuesta con nuestros copywriters aprobados y recomendados por nuestros clientes."
+        sentence2: "No estás contratando un copywriter o analista creativo de tiempo completo,  estás contratando un servicio profesional de generación de contenido on-demand ¡sólo pagas por lo que usas cuando lo quieres!"
+      pre: "¿Necesitas generar contenido profesional para tu web, social media, SEO o SEM?"
+      cta: "Prueba Voltaire haciendo tu primera orden ¡Gratis!"
+      disclaimer: "Hasta 150 palabras"
+      note: "No somos un servicio de freelancers, Voltaire es 100% responsable del servicio que se ofrece." 
