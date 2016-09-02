@@ -10,11 +10,10 @@
         %nav.main-nav.clearfix
           %ul
             %li.parent.active
-              = link_to "Inicio", root_url
+              = link_to t("header.nav.home"), root_url
             %li.parent
-              %a{ :href => "#voltaire-products" }
-                Productos
-                -# %i.menu-toggle.fa.fa-angle-down
+              = link_to t("header.nav.products"), '#voltaire-products'
+              -# %i.menu-toggle.fa.fa-angle-down
               -# %ul
               -#   %li
               -#     %a{ :href => "cases_filter.html" } Cases Filter
@@ -29,10 +28,9 @@
               -#   %li
               -#     %a{ :href => "subscriber.html" } Subscriber
             %li.parent
-              %a{ :href => "#voltaire-pricing" }
-                Precios
+              = link_to t("header.nav.pricing"), '#voltaire-pricing'
             %li
-              = link_to 'FAQ', faqs_path
+              = link_to t("header.nav.faq"), faqs_path
             -# %li.parent
             -#   %a{ :href => "blog_list.html" } Blog
             -#   %ul
@@ -43,9 +41,9 @@
             -#     %li
             -#       %a{ :href => "blog.html" } Blog Detail
             %li
-              = link_to 'Garantia', guarantee_index_url
+              = link_to t("header.nav.guarantee"), guarantee_index_url
             %li
-              %a{ :href => "#" } Mi cuenta
+              = link_to t("header.nav.my_account"), '#'
         .nav-more
           %a.c-btn.type-2{ :href => "#" }
-            %span Crea una cuenta
+            %span= t("header.nav.create_account")

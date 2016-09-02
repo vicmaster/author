@@ -20,4 +20,87 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  header:
+    nav:
+      home: "Inicio"
+      products: "Productos"
+      pricing: "Precios"
+      faq: "FAQ"
+      guarantee: "Garantia"
+      my_account: "Mi cuenta"
+      create_account: "Crear una cuenta"
+  home:
+    main_section:
+      banner:
+        title: "Contenido Profesional desarrollado por copywriters exclusivos para tu campaña estratégica."
+        cta: "Haz tu primer orden gratis."
+        disclaimer: "Hasta 150 palabras"
+      config:
+        btn_scroll: "Conoce más"
+    second_section:
+      title: "¿Que es Voltaire?"
+      description:
+        sentence1: "Voltaire te ayuda creando tu contenido profesional, conectamos tu propuesta con nuestros copywriters aprobados y recomendados por nuestros clientes."
+        sentence2: "No estás contratando un copywriter o analista creativo de tiempo completo,  estás contratando un servicio profesional de generación de contenido on-demand ¡sólo pagas por lo que usas cuando lo quieres!"
+      pre: "¿Necesitas generar contenido profesional para tu web, social media, SEO o SEM?"
+      cta: "Prueba Voltaire haciendo tu primera orden ¡Gratis!"
+      disclaimer: "Hasta 150 palabras"
+      note: "No somos un servicio de freelancers, Voltaire es 100% responsable del servicio que se ofrece." 
+    product_section:
+      title: "Productos"
+      products:
+        prod1:
+          title: "Social media"
+          description: "Genera branding, comunicación directa, nuevos lanzamientos y engagement para tu audiencia clave."
+        prod2:
+          title: "Contenido para sitio web"
+          description: "Entregamos contenido relevante basado en análisis. Siempre basándonos en mejores prácticas de SEO"
+        prod3:
+          title: "AdWords Google"
+          description: "Creamos texto con la longitud perfecta, palabras clave de Google AdWords y “call to action” de acuerdo a tendencias y objetivos."
+        prod4:
+          title: "Ecommerce"
+          description: "Descripciones de productos, páginas de categorías completas y onboardings para nuevos clientes."
+        prod5:
+          title: "Email"
+          description: "Para campañas de marketing, newsletters, combinación de correspondencia o comunicación diversa."
+        prod6:
+          title: "Blog"
+          description: "Artículos completos para mantener actualizado el blog de tu marca, optimizados para motores populares."
+      cta: "Prueba Voltaire de forma gratuita"
+      disclaimer: "Hasta 150 palabras"
+    pricing_section:
+      title: "Precio"
+      price:
+        title: "Por palabra"
+        qty: 99
+        ext: "centavos"
+        list:
+          el1: "Cualquier categoría"
+          el2: "Cambios ilimitados"
+      cta: "Haz la prueba"
+      disclaimer: "Hasta 150 palabras"
+      note: "Todos nuestros servicios incluyen garantía de devolución total de tu dinero en caso de no satisfacer tus necesidades."
+    cases_section:
+      title: "Casos de éxito"
+      nav:
+        opt1: "Caso 1"
+        opt2: "Caso 2"
+        opt3: "Caso 3"
+        opt4: "Caso 4"
+      studies:
+        title: "Inbound Marketing Formula"
+        description: "Content curation market share customer engagement buzz flat design vertical-specific. Thought leadership iterative seed money lean content proprietary."
+        list:
+          el1: "Content curation market share customer."
+          el2: "Engagement buzz flat design vertical-specific."
+          el3: "Platform omnichannel click bait thought."
+          el4: "Disrupt taste makers council conversions."
+          el5: "Insight on your business on any period of time."
+    utils_section:
+      title: "Secciones útiles"
+      nav:
+        opt1: "Conoce nuestro proceso de recepción de órdenes"
+        opt2: "Garantía de devolución de dinero"
+        opt3: "Seguimiento de órdenes"
+        opt4: "Cotización por volumen"

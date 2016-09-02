@@ -5,52 +5,31 @@
   .tt-title
     -# .tt-title-cat Precios
     %h2.c-h2
-      %small Precios
+      %small= t("home.pricing_section.title")
   .empty-space.marg-lg-b40.marg-sm-b30
   / TT-PRICING
   .row
     .col-sm-4
-      -# .tt-pricing
-      -#   %h4.tt-pricing-title Business Plan
-      -#   .tt-pricing-count
-      -#     %span.tt-pricing-top> $
-      -#     10
-      -#     %span mo
-      -#   %ul.tt-pricing-list
-      -#     %li.active Unlimited marketing & growth hacks
-      -#     %li Advanced Email list building techniques
-      -#     %li Invitation to Secret group
-      -# .empty-space.marg-xs-b30
     .col-sm-4
       .tt-pricing
-        %h4.tt-pricing-title Por palabra
+        %h4.tt-pricing-title= t("home.pricing_section.price.title")
         .tt-pricing-count
           %span.tt-pricing-top> $
-          99
-          %span centavos
+          = t("home.pricing_section.price.qty")
+          %span= t("home.pricing_section.price.ext")
         %ul.tt-pricing-list
-          %li.active Cualquier categoría
-          %li.active Cambios ilimitados
+          %li.active= t("home.pricing_section.price.list.el1")
+          %li.active= t("home.pricing_section.price.list.el2")
       .empty-space.marg-xs-b30
     .col-sm-4
-      -# .tt-pricing
-      -#   %h4.tt-pricing-title Business Plan
-      -#   .tt-pricing-count
-      -#     %span.tt-pricing-top> $
-      -#     79
-      -#     %span mo
-      -#   %ul.tt-pricing-list
-      -#     %li.active Unlimited marketing & growth hacks
-      -#     %li.active Advanced Email list building techniques
-      -#     %li.active Invitation to Secret group
   .empty-space.marg-lg-b40.marg-sm-b30
   .text-center
-    %a.c-btn.type-1.size-2{ :href => "index.html#" } Haz la prueba
+    = link_to t("home.pricing_section.cta"), "#", class: "c-btn type-1 size-2"
     %br
     %br
     %span
-      %small Hasta 150 palabras
+      %small= t("home.pricing_section.disclaimer")
     .empty-space.marg-lg-b40.marg-sm-b30
     %span
-      Todos nuestros servicios incluyen garantía de devolución total de tu dinero en caso de no satisfacer tus necesidades.
+      = t("home.pricing_section.note")
 .empty-space.marg-lg-b95.marg-sm-b50.marg-xs-b30
