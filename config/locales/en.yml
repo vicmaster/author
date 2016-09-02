@@ -82,3 +82,19 @@ en:
       cta: "Haz la prueba"
       disclaimer: "Hasta 150 palabras"
       note: "Todos nuestros servicios incluyen garantía de devolución total de tu dinero en caso de no satisfacer tus necesidades."
+    cases_section:
+      title: "Casos de éxito"
+      nav:
+        opt1: "Caso 1"
+        opt2: "Caso 2"
+        opt3: "Caso 3"
+        opt4: "Caso 4"
+      studies:
+        title: "Inbound Marketing Formula"
+        description: "Content curation market share customer engagement buzz flat design vertical-specific. Thought leadership iterative seed money lean content proprietary."
+        list:
+          el1: "Content curation market share customer."
+          el2: "Engagement buzz flat design vertical-specific."
+          el3: "Platform omnichannel click bait thought."
+          el4: "Disrupt taste makers council conversions."
+          el5: "Insight on your business on any period of time."
