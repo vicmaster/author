@@ -98,3 +98,10 @@ en:
           el3: "Platform omnichannel click bait thought."
           el4: "Disrupt taste makers council conversions."
           el5: "Insight on your business on any period of time."
+    utils_section:
+      title: "Secciones útiles"
+      nav:
+        opt1: "Conoce nuestro proceso de recepción de órdenes"
+        opt2: "Garantía de devolución de dinero"
+        opt3: "Seguimiento de órdenes"
+        opt4: "Cotización por volumen"
