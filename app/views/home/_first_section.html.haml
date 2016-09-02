@@ -2,34 +2,38 @@
 .swiper-container{ "data-add-slides" => "2", "data-autoplay" => "0", "data-center" => "0", "data-loop" => "1", "data-slides-per-view" => "1", "data-speed" => "500" }
   .swiper-wrapper.clearfix
     .swiper-slide.active{ "data-val" => "0" }
-      .tt-mslide.background-block.slide1{ style: "background-image: image-url('assets/slider/bg_5.jpg');" }
+      .tt-mslide.background-block.slide1
         .container
           .tt-mslide-inner
             -# %h1.c-h1 Contenido Profesional y exclusivo
             .simple-text.size-2
-              %p Contenido Profesional desarrollado por copywriters exclusivos para tu campaña estratégica.
-            %a.c-btn.type-1{ :href => "index.html#" } Haz tu primer orden gratis.
+              %p= t("home.main_section.banner.title")
+            = link_to t("home.main_section.banner.cta"), '#', class: 'c-btn type-1'
             %br
             %br
             %span
-              %small Hasta 150 palabras
+              %small= t("home.main_section.banner.disclaimer")
             .empty-space.marg-lg-b70.marg-md-b50
-            %a.c-btn.type-0{ :href => "#voltaire-description" } Conoce más
+            = link_to t("home.main_section.config.btn_scroll"), '#voltaire-description', class: 'c-btn type-0'
             .empty-space.marg-lg-b70.marg-md-b50
             .empty-space.marg-lg-b200.marg-xs-b160
             .empty-space.marg-lg-b170.marg-md-b100.marg-sm-b50.marg-xs-b0
             .tt-mslide-img
               = image_tag "slider/thumb.png", height: "370", width: "820", class: "img-responsive"
     .swiper-slide{ "data-val" => "1" }
-      .tt-mslide.background-block.slide1{ style: "background-image: image-url('assets/slider/bg_5.jpg');" }
+      .tt-mslide.background-block.slide2
         .container
           .tt-mslide-inner
             -# %h1.c-h1 Contenido Profesional y exclusivo
             .simple-text.size-2
-              %p Contenido Profesional desarrollado por copywriters exclusivos para tu campaña estratégica.
-            %a.c-btn.type-1{ :href => "index.html#" } Haz tu primer orden gratis
+              %p= t("home.main_section.banner.title")
+            = link_to t("home.main_section.banner.cta"), '#', class: 'c-btn type-1'
+            %br
+            %br
+            %span
+              %small= t("home.main_section.banner.disclaimer")
             .empty-space.marg-lg-b70.marg-md-b50
-            %a.c-btn.type-0{ :href => "#voltaire-description" } Conoce más
+            = link_to t("home.main_section.config.btn_scroll"), '#voltaire-description', class: 'c-btn type-0'
             .empty-space.marg-lg-b70.marg-md-b50
             .empty-space.marg-lg-b200.marg-xs-b160
             .empty-space.marg-lg-b170.marg-md-b100.marg-sm-b50.marg-xs-b0

@@ -30,3 +30,11 @@ en:
       guarantee: "Garantia"
       my_account: "Mi cuenta"
       create_account: "Crear una cuenta"
+  home:
+    main_section:
+      banner:
+        title: "Contenido Profesional desarrollado por copywriters exclusivos para tu campaña estratégica."
+        cta: "Haz tu primer orden gratis."
+        disclaimer: "Hasta 150 palabras"
+      config:
+        btn_scroll: "Conoce más"
