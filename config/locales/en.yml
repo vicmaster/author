@@ -38,7 +38,7 @@ en:
       config:
         btn_scroll: "Conoce más"
     second_section:
-      title: "¿Que es Voltaire?"
+      title: "¿Qué es Voltaire?"
       description:
         sentence1: "Voltaire te ayuda creando tu contenido profesional, conectamos tu propuesta con nuestros copywriters aprobados y recomendados por nuestros clientes."
         sentence2: "No estás contratando un copywriter o analista creativo de tiempo completo,  estás contratando un servicio profesional de generación de contenido on-demand ¡sólo pagas por lo que usas cuando lo quieres!"
@@ -73,11 +73,12 @@ en:
       title: "Precio"
       price:
         title: "Por palabra"
-        qty: 99
+        qty: $0,99
         ext: "centavos"
         list:
           el1: "Cualquier categoría"
           el2: "Cambios ilimitados"
+          el3: "Servicio a cliente por chat o teléfono durante el proceso de la orden"
       cta: "Haz la prueba"
       disclaimer: "Hasta 150 palabras"
       note: "Todos nuestros servicios incluyen garantía de devolución total de tu dinero en caso de no satisfacer tus necesidades."
@@ -104,3 +105,18 @@ en:
         opt2: "Garantía de devolución de dinero"
         opt3: "Seguimiento de órdenes"
         opt4: "Cotización por volumen"
+  footer:
+    description: "Somos un servicio profesional de generación de contenido on-demand ¡sólo pagas por lo que usas cuando lo quieres!"
+    address: |
+      Ignacio Allende #21, Ampliación Torreblanca,
+      Miguel Hidalgo, 11289, CDMX
+    email: hola@govoltaire.com
+    tel: "(312)-112-78-12"
+    nav:
+      home: "Inicio"
+      products: "Productos"
+      pricing: "Precios"
+      faq: "FAQ"
+      guarantee: "Garantia"
+      my_account: "Mi cuenta"
+      create_account: "Crear una cuenta"
