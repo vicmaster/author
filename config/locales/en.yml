@@ -105,3 +105,18 @@ en:
         opt2: "Garantía de devolución de dinero"
         opt3: "Seguimiento de órdenes"
         opt4: "Cotización por volumen"
+  footer:
+    description: "Somos un servicio profesional de generación de contenido on-demand ¡sólo pagas por lo que usas cuando lo quieres!"
+    address: |
+      Ignacio Allende #21, Ampliación Torreblanca,
+      Miguel Hidalgo, 11289, CDMX
+    email: hola@govoltaire.com
+    tel: "(312)-112-78-12"
+    nav:
+      home: "Inicio"
+      products: "Productos"
+      pricing: "Precios"
+      faq: "FAQ"
+      guarantee: "Garantia"
+      my_account: "Mi cuenta"
+      create_account: "Crear una cuenta"

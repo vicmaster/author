@@ -5,7 +5,7 @@
         = image_tag "header/logo2.png"
         .empty-space.marg-lg-b25
         .simple-text.size-3.color-4
-          %p Somos un servicio profesional de generación de contenido on-demand ¡sólo pagas por lo que usas cuando lo quieres!
+          %p= t("footer.description")
         .empty-space.marg-xs-b30
       .col-sm-6.col-md-3
         %h5.c-h5.color-3 Oficina
@@ -14,52 +14,50 @@
           .tt-address-icon
             %i.fa.fa-map-marker{ "aria-hidden" => "true" }
           .tt-address-info
-            Colibri 86
-            %br/
-            Colima, Col 28017
+            = t("footer.address")
         .empty-space.marg-lg-b25
         .tt-address.clearfix
           .tt-address-icon
             %i.fa.fa-envelope-o{ "aria-hidden" => "true" }
           .tt-address-info
-            %a{ :href => "mailto:hello@marketly.com" } hola@govoltaire.com
+            = link_to = t("footer.email")
         .empty-space.marg-lg-b25
         .tt-address.clearfix
           .tt-address-icon
             %i.fa.fa-phone{ "aria-hidden" => "true" }
           .tt-address-info
-            %a{ :href => "tel:123456789" } (312)-112-78-12
+            = link_to = t("footer.tel")
         .empty-space.marg-lg-b40.marg-xs-b30
         %h5.c-h5.color-3 Redes Sociales
         .empty-space.marg-lg-b10
         %ul.tt-social.clearfix
           %li
-            %a{ :href => "index.html#" }
+            %a{ :href => "#" }
               %i.fa.fa-facebook{ "aria-hidden" => "true" }
           %li
-            %a{ :href => "index.html#" }
+            %a{ :href => "#" }
               %i.fa.fa-twitter{ "aria-hidden" => "true" }
           %li
-            %a{ :href => "index.html#" }
+            %a{ :href => "#" }
               %i.fa.fa-instagram{ "aria-hidden" => "true" }
           %li
-            %a{ :href => "index.html#" }
+            %a{ :href => "#" }
               %i.fa.fa-linkedin{ "aria-hidden" => "true" }
         .empty-space.marg-sm-b30
       .col-xs-12.col-md-6
-        %h5.c-h5.color-3 Deja tu mensaje
-        .empty-space.marg-lg-b10
-        .simple-text.size-3.color-4
-          %p Siempre queremos escucharte. No dudes en contactarnos.
-        .empty-space.marg-lg-b10
-        .tt-footer-form
-          %form
-            .row
-              .col-sm-6
-                %input.c-input.type-1{ :placeholder => "Tu nombre", :type => "text" }/
-              .col-sm-6
-                %input.c-input.type-1{ :placeholder => "Tu email", :type => "text" }/
-            %textarea.c-area.type-1{ :placeholder => "Tu Mensaje" }
+        -# %h5.c-h5.color-3 Deja tu mensaje
+        -# .empty-space.marg-lg-b10
+        -# .simple-text.size-3.color-4
+        -#   %p Siempre queremos escucharte. No dudes en contactarnos.
+        -# .empty-space.marg-lg-b10
+        -# .tt-footer-form
+        -#   %form
+        -#     .row
+        -#       .col-sm-6
+        -#         %input.c-input.type-1{ :placeholder => "Tu nombre", :type => "text" }/
+        -#       .col-sm-6
+        -#         %input.c-input.type-1{ :placeholder => "Tu email", :type => "text" }/
+        -#     %textarea.c-area.type-1{ :placeholder => "Tu Mensaje" }
     .empty-space.marg-lg-b80.marg-sm-b50.marg-xs-b30
   .tt-footer-copy
     .container
