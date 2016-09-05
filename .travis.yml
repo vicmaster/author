@@ -8,3 +8,5 @@ before_script:
 - RAILS_ENV=test bundle exec rake db:migrate >> /dev/null 2>&1
 script:
 - RAILS_ENV=test bundle exec rake
+notifications:
+- slack: voltaire-inc:IK6tmVmBbrVlFoPGquiCt0hV
