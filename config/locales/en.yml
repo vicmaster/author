@@ -121,3 +121,44 @@ en:
       my_account: "Mi cuenta"
       create_account: "Crear una cuenta"
       contact: "Contáctanos"
+  guarantee:
+    title: "Garantía"
+    description:
+      p1: "Entendemos el valor de tu inversión y agradecemos infinitamente tu confianza al haber hecho algún pedido con nosotros."
+      p2: "En copify queremos caracterizarnos por entregar trabajos de altísima calidad y estamos seguros de nuestro trabajo y colaboradores que como parte de nuestro servicio, además de tener acceso a pedir cambios ilimitados en todas tus órdenes, tu orden está asegurada por nuestra garantía de devolución del 100% del precio total que pagaste dentro de nuestro sitio."
+    changes:
+      unlimited:
+        title: "Cambios ilimitados"
+        p1: "Nuestro sistema de recepción de órdenes nos asegura un muy claro entendimiento del contenido y trabajo que estás esperando, pero sabemos que a veces la comunicación puede cortarse un poco o podemos mejorar en el trabajo entregado debido a oportunidades no visualizadas desde un inicio."
+        p2: "Por esto, en todas tus órdenes tienes la posibilidad de pedir cambios ilimitados al trabajo entregado, siempre y cuando estén dentro del marco de tu propuesta inicial. En caso de que salgan de este marco inicial, te haremos saber por qué y qué opciones podríamos trabajar."
+      limited_novalid:
+        title: "Cambios ilimitados no válidos"
+        t1: "Selección inicial"
+        p1: "Social media, lenguaje casual, 200 palabras, proposito de promoción de una temporada de rebajas, industria: flores, target market: 20 a 30 años, NSE medio alto, alto."
+        t2: "Requerimiento de cambio"
+        p2: "Se pide cambio por un copy para la venta de un artículo de la florería."
+        p3: "En este caso, el objetivo es distinto y la investigación se tiene que hacer de nuevo para que el texto redactado sea relevante. No aplica cambio."
+      limited_valid:
+        title: "Cambios ilimitados válidos"
+        t1: "Selección inicial"
+        p1: "Social media, lenguaje casual, 200 palabras, proposito de promoción de una temporada de rebajas, industria: flores, target market: 20 a 30 años, NSE medio alto, alto."
+        t2: "Requerimiento de cambio"
+        p2: "Se pide un cambio por el nombre de la temporada de rebajas y categoría que va a estar en rebaja."
+        p3: "En este caso el “wording” cambiará, pero la intención se mantiene igual, lo que sigue haciendo nuestro estructura inicial relevante. Aplica para cambios ilimitados."
+      disclaimer: "Es muy importante entender que cada caso puede ser muy particular y será analizado por separado. El objetivo siempre será entregarte la mejor calidad dentro de nuestro servicio propuesto. Es decir, jamás te haremos perder tu dinero y esperamos el mismo trato."
+      return:
+        title: "Devolución de tu dinero"
+        p1: "Si después de haber hecho cambios, comunicarnos y tratar de entregarte el mejor trabajo posible aún no quedas satisfecho con el trabajo entregado, te regresamos el total del precio que pagaste en tu orden. Así tal cual. Todo. No en crédito para tu siguiente compra y no en un millón de años. Lo más rápido que podamos y 100% íntegro."
+        p2: "Es válida la devolución siempre que los cambios no hayan satisfecho tus demandas y haya una clara falta de nuestra parte. Sólo esperamos honestidad, pues nuestro trabajo lo realizamos de esta manera. Entendemos que algunas veces vamos a discrepar y el trabajo entregado no va a ser completamente de tu agrado, pero te prometemos que vamos a tratar nuestro máximo esfuerzo por cumplir tus más altas expectativas."
+        cta: "Comienza tu proceso de reembolso"
+    email: hola@govoltaire.com
+    tel: "(312)-112-78-12"
+    nav:
+      home: "Inicio"
+      products: "Productos"
+      pricing: "Precios"
+      faq: "FAQ"
+      guarantee: "Garantia"
+      my_account: "Mi cuenta"
+      create_account: "Crear una cuenta"
+      contact: "Contáctanos"

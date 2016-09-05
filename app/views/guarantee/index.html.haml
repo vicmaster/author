@@ -9,52 +9,95 @@
       .row
         .col-sm-10.col-sm-offset-1.col-md-8.col-md-offset-2.col-lg-6.col-lg-offset-3
           .tt-blog-top
-            .tt-blog-cat Garantia
-            %h2.tt-blog-title.c-h2 Entendemos el valor de tu inversión. 
+            %h2.tt-blog-title.c-h2
+              = t("guarantee.title")
       .empty-space.marg-lg-b25
       .row
         .col-lg-10.col-md-offset-1.col-lg-8.col-lg-offset-2
           .simple-text.style-2
-            %h4 Date:
-            %p 21.4.2016
-            %h4 Client
-            %p Marketlr  Allen Co.
-            %h4 Summary
-            %p Chatvertizing CPM SEO vertical-specific sticky content tweens proprietary. Drone taste makers organic reach tweens. Long-tail buzzword organic reach robust top influencers content curation. Wheelhouse low hanging fruit optimized for social sharing.
-            = image_tag "simple-image/simple_4.jpg", height: "379", width: "819"
-            %p Chatvertizing CPM SEO vertical-specific sticky content tweens proprietary. Drone taste makers organic reach tweens. Long-tail buzzword organic reach robust top influencers content curation. Wheelhouse low hanging fruit optimized for social sharing.
+            %p= t("guarantee.description.p1")
+            %p= t("guarantee.description.p2")
             .empty-space.marg-lg-b45.marg-sm-b30
+            %h4= t("guarantee.changes.unlimited.title")
+            %p= t("guarantee.changes.unlimited.p1")
+            %p= t("guarantee.changes.unlimited.p2")
+            %h4
+              = t("guarantee.changes.limited_novalid.title")
             .row
               .col-sm-6
                 = image_tag "simple-image/simple_5.jpg", height: "476", width: "391", class: "img-responsive"
               .col-sm-6
                 .empty-space.marg-lg-b25
                 .tt-service.type-3.clearfix
-                  %a.tt-service-icon{:href => "single.html#"}
-                    %span.lnr.lnr-pie-chart
+                  %a.tt-service-icon{:href => "#"}
+                    %span.lnr.lnr-highlight
                   .tt-service-info
-                    %a.tt-service-title.c-h4 224% More ROI
+                    %a.tt-service-title.c-h4
+                      = t("guarantee.changes.limited_novalid.t1")
                     .simple-text.size-3
-                      %p Virality The Cloud content marketing thought leadership. Alignment platform phablet. CRM scalability mobile ready.
+                      %p= t("guarantee.changes.limited_novalid.p1")
                 .empty-space.marg-lg-b20
                 .tt-service.type-3.clearfix
-                  %a.tt-service-icon{:href => "single.html#"}
-                    %span.lnr.lnr-earth
+                  %a.tt-service-icon{:href => "#"}
+                    %span.lnr.lnr-redo
                   .tt-service-info
-                    %a.tt-service-title.c-h4 Global Webinar Audience
+                    %a.tt-service-title.c-h4
+                      = t("guarantee.changes.limited_novalid.t2")
                     .simple-text.size-3
-                      %p Virality The Cloud content marketing thought leadership. Alignment platform phablet. CRM scalability mobile ready.
+                      %p= t("guarantee.changes.limited_novalid.p2")
                 .empty-space.marg-lg-b20
                 .tt-service.type-3.clearfix
-                  %a.tt-service-icon{:href => "single.html#"}
-                    %span.lnr.lnr-users
+                  %a.tt-service-icon{:href => "#"}
+                    %span.lnr.lnr-thumbs-down
                   .tt-service-info
-                    %a.tt-service-title.c-h4 25K Subscribers
+                    %a.tt-service-title.c-h4
                     .simple-text.size-3
-                      %p Virality The Cloud content marketing thought leadership. Alignment platform phablet. CRM scalability mobile ready.
+                      %p= t("guarantee.changes.limited_novalid.p3")
               .empty-space.marg-lg-b50.marg-sm-b30
-              = image_tag "simple-image/simple_6.jpg", height: "379", width: "819", class: "img-responsive"
-              .empty-space.marg-lg-b40.marg-sm-b30
-              .simple-text
-                %p Chatvertizing CPM SEO vertical-specific sticky content tweens proprietary. Drone taste makers organic reach tweens. Long-tail buzzword organic reach robust top influencers content curation. Wheelhouse low hanging fruit optimized for social sharing. Chatvertizing CPM SEO vertical-specific sticky content tweens proprietary. Drone taste makers organic reach tweens. Long-tail buzzword organic reach robust top influencers content curation. Wheelhouse low hanging fruit optimized for social sharing. Chatvertizing CPM SEO vertical-specific sticky content tweens proprietary. Drone taste makers organic reach tweens. Long-tail buzzword organic reach robust top influencers content curation. Wheelhouse low hanging fruit optimized for social sharing.
+
+            %h4
+              = t("guarantee.changes.limited_valid.title")
+            .row
+              .col-sm-6
+                .empty-space.marg-lg-b25
+                .tt-service.type-3.clearfix
+                  %a.tt-service-icon{:href => "#"}
+                    %span.lnr.lnr-highlight
+                  .tt-service-info
+                    %a.tt-service-title.c-h4
+                      = t("guarantee.changes.limited_valid.t1")
+                    .simple-text.size-3
+                      %p= t("guarantee.changes.limited_valid.p1")
+                .empty-space.marg-lg-b20
+                .tt-service.type-3.clearfix
+                  %a.tt-service-icon{:href => "#"}
+                    %span.lnr.lnr-redo
+                  .tt-service-info
+                    %a.tt-service-title.c-h4
+                      = t("guarantee.changes.limited_valid.t2")
+                    .simple-text.size-3
+                      %p= t("guarantee.changes.limited_valid.p2")
+                .empty-space.marg-lg-b20
+                .tt-service.type-3.clearfix
+                  %a.tt-service-icon{:href => "#"}
+                    %span.lnr.lnr-thumbs-up
+                  .tt-service-info
+                    %a.tt-service-title.c-h4
+                    .simple-text.size-3
+                      %p= t("guarantee.changes.limited_valid.p3")
+              .col-sm-6
+                = image_tag "simple-image/simple_5.jpg", height: "476", width: "391", class: "img-responsive"
+              .empty-space.marg-lg-b50.marg-sm-b30
+            .simple-text
+              %p= t("guarantee.changes.disclaimer")
+            .empty-space.marg-lg-b50.marg-sm-b30
+            %h4= t("guarantee.changes.return.title")
+            = image_tag "simple-image/simple_6.jpg", height: "379", width: "819", class: "img-responsive"
+            .simple-text
+              %p= t("guarantee.changes.return.p1")
+              %p= t("guarantee.changes.return.p2")
+              .empty-space.marg-lg-b70.marg-md-b50
+              .text-center
+                = link_to t("guarantee.changes.return.cta"), '#', class: 'c-btn type-0'
+            .empty-space.marg-lg-b40.marg-sm-b30
           .empty-space.marg-lg-b95.marg-sm-b50.marg-xs-b30
