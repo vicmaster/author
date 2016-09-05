@@ -28,6 +28,23 @@
           .tt-address-info
             = link_to = t("footer.tel")
         .empty-space.marg-lg-b40.marg-xs-b30
+      .col-sm-6.col-md-3
+        %h5.c-h5.color-3 Mapa del Sitio
+        .empty-space.marg-lg-b10
+        %nav.clearfix
+          %ul.tt-footer-list.clearfix
+            %li
+              = link_to t("footer.nav.products"), "#"
+            %li
+              = link_to t("footer.nav.pricing"), "#"
+            %li
+              = link_to t("footer.nav.guarantee"), "#"
+            %li
+              = link_to t("footer.nav.faq"), "#"
+            %li
+              = link_to t("footer.nav.contact"), "#"
+        .empty-space.marg-lg-b40.marg-xs-b30
+      .col-sm-6.col-md-3
         %h5.c-h5.color-3 Redes Sociales
         .empty-space.marg-lg-b10
         %ul.tt-social.clearfix
@@ -43,21 +60,7 @@
           %li
             %a{ :href => "#" }
               %i.fa.fa-linkedin{ "aria-hidden" => "true" }
-        .empty-space.marg-sm-b30
-      .col-xs-12.col-md-6
-        -# %h5.c-h5.color-3 Deja tu mensaje
-        -# .empty-space.marg-lg-b10
-        -# .simple-text.size-3.color-4
-        -#   %p Siempre queremos escucharte. No dudes en contactarnos.
-        -# .empty-space.marg-lg-b10
-        -# .tt-footer-form
-        -#   %form
-        -#     .row
-        -#       .col-sm-6
-        -#         %input.c-input.type-1{ :placeholder => "Tu nombre", :type => "text" }/
-        -#       .col-sm-6
-        -#         %input.c-input.type-1{ :placeholder => "Tu email", :type => "text" }/
-        -#     %textarea.c-area.type-1{ :placeholder => "Tu Mensaje" }
+        .empty-space.marg-lg-b40.marg-xs-b30
     .empty-space.marg-lg-b80.marg-sm-b50.marg-xs-b30
   .tt-footer-copy
     .container
