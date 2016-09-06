@@ -7,25 +7,26 @@
       .tt-mslide-inner
         %h1.c-h1-0
           = image_tag("voltaire.svg")
-        .simple-text-banner.size-2
+        .simple-text.size-2
           %p= t("home.main_section.banner.title")
         .empty-space.marg-lg-b70.marg-md-b50
         = link_to t("home.main_section.banner.cta"), '#', class: 'c-btn type-1'
         %br
         %br
-        %span.text-white
+        %span
           %small= t("home.main_section.banner.disclaimer")
         .empty-space.marg-lg-b70.marg-md-b50
         .tt-scroll-down
           = link_to "#voltaire-description" do
             %p= t("home.main_section.config.btn_scroll")
             %span.lnr.lnr-chevron-down-circle
+          .empty-space.marg-lg-b70.marg-md-b30
         -# = link_to t("home.main_section.config.btn_scroll"), '#voltaire-description', class: 'c-btn type-0'
         -# .empty-space.marg-lg-b70.marg-md-b50
         .empty-space.marg-lg-b200.marg-xs-b160
-      -# .empty-space.marg-lg-b170.marg-md-b100.marg-sm-b50.marg-xs-b0
-      -# .tt-mslide-img
-      -#   = image_tag "slider/thumb.png", height: "370", width: "820", class: "img-responsive"
+      .empty-space.marg-lg-b170.marg-md-b100.marg-sm-b50.marg-xs-b0
+      .tt-mslide-img
+        = image_tag "slider/thumb.png", height: "370", width: "820", class: "img-responsive"
   -# .swiper-slide{ "data-val" => "1" }
   -#   .tt-mslide.background-block.slide2
   -#     .container

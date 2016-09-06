@@ -378,7 +378,7 @@ body {
 }
 
 .slide1 {
-  background-image: image-url("slider/header-background.jpg"); 
+  background-image: image-url("slider/bg_9.jpg"); 
 }
 .slide2 {
   background-image: image-url("slider/bg_7.jpg");
@@ -421,12 +421,12 @@ a {
   color: white;
 }
 .tt-scroll-down {
-  color: white;
+  // color: white;
   font-size: 50px;
   a {
-    color: white;
-    font-size: 50px;
-    p { font-size: 15px }
+    color: #3290BE;
+    font-size: 35px;
+    p { font-size: 12px }
   }
 }
 
