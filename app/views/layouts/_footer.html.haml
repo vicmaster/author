@@ -2,7 +2,7 @@
   .container
     .row
       .col-sm-6.col-md-3
-        = image_tag "header/logo2.png"
+        = image_tag "voltaire.svg"
         .empty-space.marg-lg-b25
         .simple-text.size-3.color-4
           %p= t("footer.description")
@@ -20,13 +20,13 @@
           .tt-address-icon
             %i.fa.fa-envelope-o{ "aria-hidden" => "true" }
           .tt-address-info
-            = link_to = t("footer.email")
+            = link_to t("footer.email"), "mailto:hola@govoltaire.com"
         .empty-space.marg-lg-b25
         .tt-address.clearfix
           .tt-address-icon
             %i.fa.fa-phone{ "aria-hidden" => "true" }
           .tt-address-info
-            = link_to = t("footer.tel")
+            = t("footer.tel")
         .empty-space.marg-lg-b40.marg-xs-b30
       .col-sm-6.col-md-3
         %h5.c-h5.color-3 Mapa del Sitio
