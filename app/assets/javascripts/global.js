@@ -47,10 +47,10 @@ jQuery(function($) {
 		initSwiper();
 		if($('.isotope-filter').length){
 			var initValue = $('.isotope-nav').find('.selected a').attr('data-filter');
-			$container.isotope({itemSelector: '.isotope-item', filter: initValue,masonry:{gutter:0,columnWidth:'.grid-sizer'}});			
+			$container.masonry({itemSelector: '.isotope-item', filter: initValue,masonry:{gutter:0,columnWidth:'.grid-sizer'}});			
 		}
 		if($('.isotope').length){
-			$container.isotope({itemSelector: '.isotope-item', masonry:{gutter:0,columnWidth:'.grid-sizer'}});			
+			$container.masonry({itemSelector: '.isotope-item', masonry:{gutter:0,columnWidth:'.grid-sizer'}});			
 		}				
 	});
 	
