@@ -23,6 +23,7 @@ gem 'masonry-rails',                 '~> 0.2.4'
 gem 'activerecord-humanized_errors', '~> 2.0.1'
 gem 'awesome_print',                 '~> 1.6.1'
 gem 'ffaker',                        '~> 2.2.0'
+gem 'route_translator',              '~> 4.4.1'
 
 group :development, :test do
   gem 'capybara',         '~> 2.4.4'
