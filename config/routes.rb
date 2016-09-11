@@ -1,6 +1,8 @@
 Author::Application.routes.draw do
   root "home#index"
 
-  resources "faqs", only: [:index]
-  resources "guarantee", only: [:index]
+  localized do
+    resources "faqs", only: [:index]
+    resources "guarantee", only: [:index]
+  end
 end
