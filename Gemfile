@@ -9,15 +9,16 @@ gem 'pg'
 gem 'puma'
 
 # Assets
-gem 'sass-rails',                    github: 'rails/sass-rails'
-gem 'uglifier',                      '>= 1.3.0'
-gem 'coffee-rails'
-gem 'jquery-rails'
-gem 'haml-rails'
 gem 'bootstrap-sass',                '~> 3.3.5'
+gem 'bourbon'
+gem 'coffee-rails'
 gem 'font-awesome-rails',            '~> 4.6.3.1'
-gem 'swiper-rails',                  '~> 1.0.4'
+gem 'haml-rails'
+gem 'jquery-rails'
 gem 'masonry-rails',                 '~> 0.2.4'
+gem 'sass-rails',                    '~> 5.0'
+gem 'swiper-rails',                  '~> 1.0.4'
+gem 'uglifier',                      '>= 1.3.0'
 
 # Utils
 gem 'activerecord-humanized_errors', '~> 2.0.1'
@@ -25,6 +26,7 @@ gem 'awesome_print',                 '~> 1.6.1'
 gem 'ffaker',                        '~> 2.2.0'
 gem 'route_translator',              '~> 4.4.1'
 gem 'devise',                        '~> 3.5.10'
+gem 'administrate',                  '~> 0.2.2'
 
 group :development, :test do
   gem 'capybara',         '~> 2.4.4'
