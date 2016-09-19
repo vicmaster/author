@@ -2,16 +2,16 @@ source 'https://rubygems.org'
 ruby   '2.3.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.13'
+gem 'rails', '4.1'
 
 # Services
 gem 'pg'
 gem 'puma'
 
 # Assets
-gem 'sass-rails',                    '~> 4.0.2'
+gem 'sass-rails',                    github: 'rails/sass-rails'
 gem 'uglifier',                      '>= 1.3.0'
-gem 'coffee-rails',                  '~> 4.0.0'
+gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'haml-rails'
 gem 'bootstrap-sass',                '~> 3.3.5'
