@@ -44,6 +44,15 @@
               = link_to t("header.nav.guarantee"), guarantee_index_url
             %li
               = link_to t("header.nav.my_account"), '#'
-        .nav-more
-          %a.c-btn.type-2{ :href => "#" }
-            %span= t("header.nav.create_account")
+              %i.menu-toggle.fa.fa-angle-down
+              %ul
+                - if user_signed_in?
+                  %li
+                    = link_to "Cerrar Sesion", destroy_user_session_path, method: :delete
+                - else
+                  %li
+                    = link_to "Iniciar Sesion", new_user_session_path
+        - unless user_signed_in?
+          .nav-more
+            = link_to new_user_registration_path, class: 'c-btn type-2' do
+              %span= t("header.nav.create_account")

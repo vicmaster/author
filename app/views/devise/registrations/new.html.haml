@@ -1,0 +1,41 @@
+.tt-header-margin
+#content-wrapper
+  .container
+    .empty-space.marg-lg-b100.marg-sm-b50.marg-xs-b30
+    / TT-TITLE
+    .tt-title
+      %h2.c-h2
+        %small Crea tu cuenta
+    .empty-space.marg-lg-b35.marg-sm-b30
+    .row
+      .col-md-8.col-md-offset-2.col-lg-6.col-lg-offset-3
+        .tt-contact-form
+          = form_for(resource, as: resource_name, url: registration_path(resource_name), id: 'contact-form') do |f|
+            = devise_error_messages!
+            -# .field
+            -#   = f.field :first_name, autofocus: true, placeholder: 'Nombre', class: 'c-input type-2 size-2'
+            -#   %br/
+            -#   %br/
+            -# .field
+            -#   = f.field :last_name, placeholder: 'Apellido', class: 'c-input type-2 size-2'
+            -#   %br/
+            -#   %br/
+            .field
+              = f.email_field :email, autofocus: true,  placeholder: 'Email', class: 'c-input type-2 size-2'
+              %br/
+              %br/
+            .field
+              = f.password_field :password, autocomplete: "off", placeholder: 'Password', class: 'c-input type-2 size-2'
+              %br/
+              %br/
+            .field
+              = f.password_field :password_confirmation, autocomplete: "off", placeholder: 'Confirma tu password', class: 'c-input type-2 size-2'
+              %br/
+              %br/
+            .actions
+              = f.submit "Crear cuenta", class: 'c-btn type-1 size-3 full'
+              %br/
+              %br/
+            .text-center
+              = render "devise/shared/links"
+    .empty-space.marg-lg-b150.marg-sm-b50.marg-xs-b30

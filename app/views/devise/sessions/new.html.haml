@@ -1,0 +1,34 @@
+.tt-header-margin
+#content-wrapper
+  .container
+    .empty-space.marg-lg-b100.marg-sm-b50.marg-xs-b30
+    / TT-TITLE
+    .tt-title
+      %h2.c-h2
+        %small Inicia Sesion
+    .empty-space.marg-lg-b35.marg-sm-b30
+    .row
+      .col-md-8.col-md-offset-2.col-lg-6.col-lg-offset-3
+        .tt-contact-form
+        = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+          .field
+            = f.email_field :email, placeholder: 'Email', class: 'c-input type-2 size-2'
+            %br/
+            %br/
+          .field
+            = f.password_field :password, autocomplete: "off", placeholder: 'Password', class: 'c-input type-2 size-2'
+            %br/
+            %br/
+          -# - if devise_mapping.rememberable?
+          -#   .field
+          -#     = f.check_box :remember_me
+          -#     = f.label 'Recordar'
+          -#     %br/
+          -#     %br/
+          .actions
+            = f.submit "Iniciar Sesion", class: 'c-btn type-1 size-3 full'
+            %br/
+            %br/
+        .text-center
+          = render "devise/shared/links"
+    .empty-space.marg-lg-b150.marg-sm-b50.marg-xs-b30
