@@ -35,6 +35,7 @@ group :development, :test do
   gem 'pry-byebug',       '~> 3.3.0'
   gem 'rspec-rails',      '~> 3.2.1'
   gem 'rails-erd',        '~> 1.5.0'
+  gem 'lol_dba'
 end
 
 group :production do
