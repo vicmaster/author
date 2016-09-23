@@ -18,6 +18,7 @@ class ProductDashboard < Administrate::BaseDashboard
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
     sku: Field::String,
+    price: Field::String.with_options(searchable: false),
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -45,6 +46,7 @@ class ProductDashboard < Administrate::BaseDashboard
     :created_at,
     :updated_at,
     :sku,
+    :price,
   ].freeze
 
   # FORM_ATTRIBUTES
@@ -58,6 +60,7 @@ class ProductDashboard < Administrate::BaseDashboard
     :available_on,
     :deleated_at,
     :sku,
+    :price,
   ].freeze
 
   # Overwrite this method to customize how products are displayed

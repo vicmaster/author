@@ -12,7 +12,6 @@ class LineItemDashboard < Administrate::BaseDashboard
     product: Field::BelongsTo,
     id: Field::Number,
     quantity: Field::Number,
-    price: Field::String.with_options(searchable: false),
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
   }.freeze
@@ -36,7 +35,6 @@ class LineItemDashboard < Administrate::BaseDashboard
     :product,
     :id,
     :quantity,
-    :price,
     :created_at,
     :updated_at,
   ].freeze
@@ -48,7 +46,6 @@ class LineItemDashboard < Administrate::BaseDashboard
     :order,
     :product,
     :quantity,
-    :price,
   ].freeze
 
   # Overwrite this method to customize how line items are displayed
