@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160921062410) do
+ActiveRecord::Schema.define(version: 20160921071255) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -37,6 +37,9 @@ ActiveRecord::Schema.define(version: 20160921062410) do
     t.datetime "updated_at"
   end
 
+  add_index "line_items", ["order_id"], name: "index_line_items_on_order_id", using: :btree
+  add_index "line_items", ["product_id"], name: "index_line_items_on_product_id", using: :btree
+
   create_table "orders", force: :cascade do |t|
     t.string   "number",          limit: 15
     t.decimal  "item_total",                 precision: 8, scale: 2, default: 0.0, null: false
@@ -50,14 +53,6 @@ ActiveRecord::Schema.define(version: 20160921062410) do
     t.string   "payment_state"
     t.string   "email"
   end
-
-  create_table "orders_products", id: false, force: :cascade do |t|
-    t.integer "product_id", null: false
-    t.integer "order_id",   null: false
-  end
-
-  add_index "orders_products", ["order_id"], name: "index_orders_products_on_order_id", using: :btree
-  add_index "orders_products", ["product_id"], name: "index_orders_products_on_product_id", using: :btree
 
   create_table "products", force: :cascade do |t|
     t.string   "name",         default: "", null: false

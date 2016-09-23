@@ -9,7 +9,7 @@ class ProductDashboard < Administrate::BaseDashboard
   # on pages throughout the dashboard.
   ATTRIBUTE_TYPES = {
     categories: Field::HasMany,
-    orders: Field::HasMany,
+    line_item: Field::HasOne,
     id: Field::Number,
     name: Field::String,
     description: Field::Text,
@@ -17,7 +17,6 @@ class ProductDashboard < Administrate::BaseDashboard
     deleated_at: Field::DateTime,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
-    price: Field::String.with_options(searchable: false),
     sku: Field::String,
   }.freeze
 
@@ -28,7 +27,7 @@ class ProductDashboard < Administrate::BaseDashboard
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = [
     :categories,
-    :orders,
+    :line_item,
     :id,
     :name,
   ].freeze
@@ -37,7 +36,7 @@ class ProductDashboard < Administrate::BaseDashboard
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = [
     :categories,
-    :orders,
+    :line_item,
     :id,
     :name,
     :description,
@@ -45,7 +44,6 @@ class ProductDashboard < Administrate::BaseDashboard
     :deleated_at,
     :created_at,
     :updated_at,
-    :price,
     :sku,
   ].freeze
 
@@ -54,12 +52,11 @@ class ProductDashboard < Administrate::BaseDashboard
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = [
     :categories,
-    :orders,
+    :line_item,
     :name,
     :description,
     :available_on,
     :deleated_at,
-    :price,
     :sku,
   ].freeze
 

@@ -2,12 +2,12 @@ Rails.application.routes.draw do
   namespace :admin do
     resources :users
     resources :categories
+    resources :line_items
     resources :orders
     resources :products
 
     root to: "users#index"
   end
-
 
   devise_for :users
   root "home#index"
