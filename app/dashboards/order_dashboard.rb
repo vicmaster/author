@@ -10,6 +10,7 @@ class OrderDashboard < Administrate::BaseDashboard
   ATTRIBUTE_TYPES = {
     products: Field::HasMany,
     line_items: Field::HasMany,
+    user: Field::BelongsTo,
     id: Field::Number,
     number: Field::String,
     item_total: Field::String.with_options(searchable: false),
@@ -32,8 +33,8 @@ class OrderDashboard < Administrate::BaseDashboard
   COLLECTION_ATTRIBUTES = [
     :products,
     :line_items,
+    :user,
     :id,
-    :number,
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
@@ -41,6 +42,7 @@ class OrderDashboard < Administrate::BaseDashboard
   SHOW_PAGE_ATTRIBUTES = [
     :products,
     :line_items,
+    :user,
     :id,
     :number,
     :item_total,
@@ -61,6 +63,7 @@ class OrderDashboard < Administrate::BaseDashboard
   FORM_ATTRIBUTES = [
     :products,
     :line_items,
+    :user,
     :number,
     :item_total,
     :total,
