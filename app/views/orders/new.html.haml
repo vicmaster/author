@@ -1,0 +1,14 @@
+.tt-header-margin
+#content-wrapper
+  .container
+    .empty-space.marg-lg-b100.marg-sm-b50.marg-xs-b30
+    / TT-TITLE
+    .tt-title
+      %h2.c-h2
+        %small New order
+    .empty-space.marg-lg-b35.marg-sm-b30
+    .row
+      .col-md-8.col-md-offset-2.col-lg-6.col-lg-offset-3
+        = render 'form'
+
+        = link_to 'Back', orders_path

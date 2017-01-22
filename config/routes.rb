@@ -12,6 +12,10 @@ Rails.application.routes.draw do
 
   devise_for :users, :controllers => { registrations: 'users/registrations' }
   root "home#index"
+  resources :orders
+  resources :products
+  resources :line_items
+  resources :categories
 
   localized do
     resources "faqs", only: [:index]

@@ -29,6 +29,7 @@ gem 'devise',                        '~> 3.5.10'
 gem 'ffaker',                        '~> 2.2.0'
 gem 'rolify',                        '~> 5.1.0'
 gem 'route_translator',              '~> 4.4.1'
+gem 'xray-rails'
 
 group :development, :test do
   gem 'capybara',         '~> 2.4.4'

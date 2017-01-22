@@ -1,0 +1,28 @@
+.tt-header-margin
+#content-wrapper
+  .container
+    .empty-space.marg-lg-b100.marg-sm-b50.marg-xs-b30
+    / TT-TITLE
+    .tt-title
+      %h2.c-h2
+        %small Inicia Order
+    .empty-space.marg-lg-b35.marg-sm-b30
+    .row
+      .col-md-8.col-md-offset-2.col-lg-6.col-lg-offset-3
+        %table
+          %thead
+            %tr
+              %th
+              %th
+              %th
+
+          %tbody
+            - @orders.each do |order|
+              %tr
+                %td= link_to 'Show', order
+                %td= link_to 'Edit', edit_order_path(order)
+                %td= link_to 'Destroy', order, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+        %br
+
+        = link_to 'New Order', new_order_path
